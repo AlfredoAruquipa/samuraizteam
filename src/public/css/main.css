@@ -454,6 +454,26 @@ header3 .menu{
     text-transform: uppercase;
     color: #fff;
 }
+
+  .title-row2 {
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+  margin-bottom: 2rem;
+  top: 50px;
+  position: relative;
+  padding: 80px 100px;
+}
+  .title-row2 .title2 {
+font-size: 2.5rem;
+font-family: "Blender Pro";
+text-transform: uppercase;
+color: #fff;
+}
+
+
+
+
     button {
     border: 1px solid #7E2DF9;
     background: transparent;
@@ -483,6 +503,25 @@ header3 .menu{
     font-family: "Blender Pro";
     text-transform: uppercase;
     color: #fff;
+
+} } 
+@media (max-width: 991px){
+  .title-row2 {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    margin-bottom: 2rem;
+    top: 100px;
+    position: relative;
+    padding: 20px 20px;
+
+} } 
+@media (max-width: 991px){
+.title-row2 .title2 {
+  font-size: 1.2rem;
+  font-family: "Blender Pro";
+  text-transform: uppercase;
+  color: #fff;
 
 } } 
 @media (max-width: 991px){

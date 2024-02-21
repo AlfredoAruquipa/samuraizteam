@@ -15,6 +15,9 @@
       .column {
         flex-basis: calc(33.333% - 6rem);
         margin: 0;
+        font-family: 'Blender Pro';
+      font-weight: normal;
+  font-style: normal;
       }
       
       .container2 {
@@ -22,7 +25,12 @@
         justify-content: space-between;
         align-items: flex-start;
         flex-wrap: wrap;
-      }
+        width: 100%;
+        padding: 00 90px;
+        font-family: 'Blender Pro';
+      font-weight: normal;
+  font-style: normal;
+    }
       
       .social-media2 {
        display: flex;
@@ -103,8 +111,9 @@
     @media (max-width: 991px){
         .footer {
             justify-content: flex-start;
-            padding: 15rem 2rem
-        
+          
+            padding: 15rem 2rem;
+            height: 50%;
         }
     }
     @media (max-width: 991px){
@@ -115,6 +124,7 @@
         align-items: flex-start;
         flex-wrap: wrap;
         height: 50px;
+        padding: 0;
       }  }
 
       @media (max-width: 991px){
@@ -156,3 +166,4 @@
         bottom: 4px;
         position: relative;
       } }
+
