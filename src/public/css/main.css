@@ -1,0 +1,512 @@
+@font-face {
+    font-family: 'Blender Pro';
+    src: url('BlenderPro-Thin.eot');
+    src: local('Blender Pro Thin'), local('BlenderPro-Thin'),
+        url('BlenderPro-Thin.eot?#iefix') format('embedded-opentype'),
+        url('/font/BlenderPro-Thin.woff2') format('woff2'),
+        url('/font/BlenderPro-Thin.woff') format('woff'),
+        url('/font/BlenderPro-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Blender Pro';
+    src: url('BlenderPro-Medium.eot');
+    src: local('/font/Blender Pro Medium'), local('BlenderPro-Medium'),
+        url('/font/BlenderPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/font/BlenderPro-Medium.woff2') format('woff2'),
+        url('/font/BlenderPro-Medium.woff') format('woff'),
+        url('/font/BlenderPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Blender Pro';
+    src: url('/font/BlenderPro-Bold.eot');
+    src: local('/font/Blender Pro Bold'), local('BlenderPro-Bold'),
+          url('/font/BlenderPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/font/BlenderPro-Bold.woff2') format('woff2'),
+        url('/font/BlenderPro-Bold.woff') format('woff'),
+        url('/font/BlenderPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: verdana;
+  }
+  
+  body{
+ 
+    margin: 0;
+    font-family: 'Blender Pro';
+     font-weight: bold;
+     font-style: normal;
+    background-color: #160a27;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr;
+    height: 100%;
+    margin: 0;
+  }
+  
+  /*tamaño de icono*/
+  header .brand img{
+    height: 50px; 
+  }
+  
+  .section-main h1{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 60px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 80px;
+    text-shadow: 0 0 3px #fff, 0 0 3px #000000;
+  }
+  
+  
+    header {
+      z-index: 999;
+      position: fixed;
+      top: 38px;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 80px;
+      transition: 0.6s;
+      border-block: 1px solid #7f2df96e; 
+  }
+  header.down{
+    background: #180a279c;
+    backdrop-filter: blur(2px); 
+    border-block: 1px solid #7f2df96e;
+  
+  
+  }  
+  header77 {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 39px;
+    transition: 0.6s;
+    border-block: 1px solid #7f2df96e;
+}
+header77.down{
+  background: #180a279c;
+  backdrop-filter: blur(2px); 
+  border-block: 1px solid #7f2df96e;
+}
+
+header3{
+  z-index: 999;
+  position: relative;
+  top: 50;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s; 
+  background-color: #ff0000;
+}
+header3 .menu{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+  img.down{
+    display:block;
+  margin:auto;
+    
+  }
+  
+  
+  header .brand{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    
+  }
+  
+  header .menu{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  header .menu ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  header .menu ul li{
+      list-style: none;
+  }
+  
+  header .menu a{
+    color: #ffffff;
+    font-weight: 10;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 0 35px;
+    font-family: 'Blender Pro';
+    font-weight: bold;
+    transition-property: color, background;
+   
+    
+  }
+  
+  header .menu a:hover{
+    color: #000;
+    background: #fff;
+  }
+  
+  .section-two{
+    padding: 20px;
+  }
+    /*boton para  abir menu lateral*/
+  header .btn{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  @media (max-width: 991px){
+    header, header.down{
+        padding: 20px 40px;
+        top: 0;
+    }
+    header .btn{
+      display: block;
+    }
+  /*menulateral modomovil*/
+    header .menu{
+      position: fixed;
+      background-image: linear-gradient(to right, #1e1b22 , #20142f);
+      min-width: 330px;
+      height: 100vh;
+      top: 0;
+      right: -100%;
+      padding: 80px 50px;
+      transition: 0.5s;
+      transition-property: right;
+      border-block: 1px solid #ff1a8d;
+    }
+  
+    header .menu ul{
+        flex-direction: column;
+      }
+  
+    header .menu.active{
+      right: 0;
+    }
+  
+    header .menu .close-btn{
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 25px;
+    }
+  
+    header .menu a{
+      display: block;
+      font-size: 16px;
+      margin: 20px;
+      padding: 0 15px;
+    }
+  }
+
+  @media (max-width: 600px){
+    .section-main h1{
+      font-size: 50px;
+      line-height: 60px;
+    }
+  }
+  
+  .hero{
+    background: linear-gradient(0deg,rgba(0,0,0,.8),rgba(0,0,0,.8)),linear-gradient(0deg,rgba(126,45,249,.7),rgba(126,45,249,.4)),url(hero-about.e08e5e0d789ae354.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 55vh;
+  }
+  .section-main{
+   height: 55vh;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(0deg,rgba(0,0,0,.8),rgba(0, 0, 0, 0.144)),linear-gradient(0deg,rgba(126,45,249,.7),rgba(127, 45, 249, 0.034)),
+    url(/7.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 80px;
+  }
+
+  /*--------------------------------------------------------------------------*/
+     /*video*/
+
+     video{
+      width: 100%;
+      height: auto!important;
+      object-fit: cover;
+    }
+    
+  /*--------------------------------------------------------------------------*/
+
+       /*redessociales*/
+ 
+  .social-media-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+    place-items: center;
+    padding: 4px 180px;
+    color: #beb3cf;
+   
+    gap: 1.9rem;/* espacio entre iconos */ 
+    cursor: pointer;
+    font-size: 20px;
+    transition: filter .15s ease-in-out,fill .15s ease-in-out;
+}
+.social-media-bar a {
+ 
+  color: #beb3cf;
+  font-size: 20px;
+  
+}
+
+
+  
+@media (max-width: 991px){
+  .social-media-bar a{
+    color:#a499b494;
+    font-size: 25px;
+    
+   
+  }
+  }
+  @media (max-width: 991px){
+    header77 .social-media-bar {
+      top: 200px;
+ left: 70px;
+
+    }
+    }
+  @media (max-width: 991px){
+    header77.down {
+      top: -500px;
+    }
+    }
+
+
+
+
+  @media (max-width: 991px){
+        header .brand img{
+          position: relative;
+         height: 50px; 
+         left: 125px;
+      
+      
+  } 
+}
+ /*--------------------------------------------------------------------------*/
+
+       /*scroll*/
+       .parallax {
+        background-image: url(/img/6.jpg);
+        height: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+     /*--------------------------------------------------------------------------*/
+
+       /*imagenesinicio*/
+      
+ 
+       body {
+        font-family: Arial, sans-serif;
+    }
+    
+    .container {
+        display: flex;
+        max-width: 1450px;
+    }
+
+    @media (max-width: 991px){
+    .container {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      top: 80px;
+  }
+}
+    
+    .column {
+        flex: 1;
+    }
+ 
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .image {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        transition: border-color 0.3s;
+        border: 0.3px solid #8b79a59a;
+    }
+   
+    
+    .image:hover {
+        border: 1.5px solid #7E2DF9;
+    }
+    
+    .description {
+        margin: 0;
+    }
+
+    .column1 .image{
+      
+      border-radius: 8px;
+      content: "";
+      position: relative;
+      inset: 0;
+      width: 80%;
+      height: 90%;
+      filter: drop-shadow(15px 15px 50px #130623);
+      opacity: 1;
+    }
+    .row1 .image{
+      position: relative;
+      border-radius: 8px;
+      content: "";
+      position: relative;
+      inset: 0;
+      width: 40%;
+      height: 50%;
+      filter: drop-shadow(15px 15px 50px #130623);
+      opacity: 1;
+    }
+    .row2 .image{
+      
+      border-radius: 8px;
+      content: "";
+      position: relative;
+      inset: 0;
+      width: 40%;
+      height: 50%;
+      filter: drop-shadow(15px 15px 50px #130623);
+      opacity: 1;
+    }
+
+
+  /*--------------------------------------------------------------------------*/
+
+       /*letra mas*/
+    .title-row {
+      display: flex;
+      justify-content: space-between;
+      place-items: center;
+      margin-bottom: 2rem;
+      top: 50px;
+      position: relative;
+      padding: 80px 100px;
+  }
+  .title-row .title {
+    font-size: 2.5rem;
+    font-family: "Blender Pro";
+    text-transform: uppercase;
+    color: #fff;
+}
+    button {
+    border: 1px solid #7E2DF9;
+    background: transparent;
+    transition: background var(--transition);
+    border-radius: 4px;
+    padding: .5rem 1.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #fff;
+  }
+
+
+  @media (max-width: 991px){
+    .title-row {
+      display: flex;
+      justify-content: space-between;
+      place-items: center;
+      margin-bottom: 2rem;
+      top: 100px;
+      position: relative;
+      padding: 20px 20px;
+  
+} } 
+@media (max-width: 991px){
+  .title-row .title {
+    font-size: 1.2rem;
+    font-family: "Blender Pro";
+    text-transform: uppercase;
+    color: #fff;
+
+} } 
+@media (max-width: 991px){
+     button{
+    border: 1px solid #7E2DF9;
+    background: transparent;
+    transition: background var(--transition);
+    border-radius: 4px;
+    padding: .5rem 1.5rem;
+    font-weight: 50;
+    font-size: 1rem;
+    color: #fff;
+
+} } 
+
+@media (max-width: 991px){
+.column1 .image{
+      
+  border-radius: 8px;
+  content: "";
+  position: relative;
+  inset: 0;
+  width: 350px;
+  height: 450px;
+  filter: drop-shadow(15px 15px 50px #130623);
+  opacity: 1;
+}}
