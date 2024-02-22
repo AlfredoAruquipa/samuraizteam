@@ -167,3 +167,113 @@
         position: relative;
       } }
 
+
+
+      body90 {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+      }
+      
+      .match-container {
+        max-width: 1380px;
+        margin: 50px auto;
+        background: #7f2df900;
+        position: relative;
+        background: #7E2DF90D;
+        border: 1px solid;
+        border-image: linear-gradient(90deg,rgba(250,204,165,.7) 0%,rgba(126,45,249,.7)) 1/1/0 stretch;
+        box-shadow: 0 0 20px #d1d1d11a;
+        height: 145px;
+        bottom: 60px;
+    }
+    @media (max-width: 991px){   
+    .match-container {
+      max-width: 1380px;
+      margin: 150px 20px;
+      background: #7f2df900;
+      position: relative;
+      background: #7E2DF90D;
+      border: 1px solid;
+      border-image: linear-gradient(90deg,rgba(250,204,165,.7) 0%,rgba(126,45,249,.7)) 1/1/0 stretch;
+      box-shadow: 0 0 20px #d1d1d11a;
+      height: 270px;
+      bottom: -90px;
+  }}
+     
+      
+      .match-title {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 36px;
+        color: #ffffff;
+        border: 1px solid;
+        max-width: 1380px;
+        border-image: linear-gradient(90deg,rgba(250,204,165,.7) 0%,rgba(126,45,249,.7)) 1/1/0 stretch;
+        box-shadow: 0 0 20px #d1d1d11a;
+      }
+      
+      .team-name {
+         font-weight: 10;
+         font-size: 16px;
+         font-family: 'Blender Pro';
+         font-weight: bold;
+         color: #ffffff;
+       
+      }
+      @media (max-width: 991px){ 
+      .match-title {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 36px;
+        color: #ffffff;
+        border: 1px solid;
+        max-width: 1380px;
+        border-image: linear-gradient(90deg,rgba(250,204,165,.7) 0%,rgba(126,45,249,.7)) 1/1/0 stretch;
+        box-shadow: 0 0 20px #d1d1d11a;
+      } }
+      @media (max-width: 991px){ 
+      .team-name {
+         font-weight: 10;
+         font-size: 16px;
+         font-family: 'Blender Pro';
+         font-weight: bold;
+         color: #ffffff;
+       
+      } }
+      .match-subtitle {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 24px;
+        color: #777;
+      }
+      
+      .match-details {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 10;
+         font-size: 16px;
+         font-family: 'Blender Pro';
+         font-weight: bold;
+         color: #ffffff;
+      }
+      
+      .match-date {
+        font-size: 18px;
+        color: #333;
+        margin-right: 20px;
+      }
+      
+      .match-time {
+        font-size: 18px;
+        color: #333;
+        margin-right: 20px;
+      }
+      
+      .match-game {
+        font-size: 18px;
+        color: #777;
+        font-weight: bold;
+      }
