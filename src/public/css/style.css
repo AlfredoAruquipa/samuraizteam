@@ -191,7 +191,7 @@
     @media (max-width: 991px){   
     .match-container {
       max-width: 1380px;
-      margin: 150px 20px;
+      margin: 150px 30px;
       background: #7f2df900;
       position: relative;
       background: #7E2DF90D;
@@ -262,18 +262,21 @@
       
       .match-date {
         font-size: 18px;
-        color: #333;
-        margin-right: 20px;
+        font-family: 'Blender Pro';
+        font-weight: bold;
+        color: #ffffff;
       }
       
       .match-time {
         font-size: 18px;
-        color: #333;
-        margin-right: 20px;
+        font-family: 'Blender Pro';
+         font-weight: bold;
+         color: #ffffff;
       }
       
       .match-game {
         font-size: 18px;
-        color: #777;
+        font-family: 'Blender Pro';
         font-weight: bold;
+        color: #ffffff;
       }

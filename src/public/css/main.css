@@ -317,8 +317,10 @@ header3 .menu{
   }
   @media (max-width: 991px){
     header77 .social-media-bar {
-      top: 200px;
+
+ top: 200px;
  left: 70px;
+ position: relative;
 
     }
     }
