@@ -280,3 +280,240 @@
         font-weight: bold;
         color: #ffffff;
       }
+
+      .imagen2 .im {
+
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  transition: .3s;
+  border-radius: 8px;
+  content: "";
+ filter: drop-shadow(15px 15px 50px #130623);
+  opacity: 1;
+  margin-bottom: 10px;
+        transition: border-color 0.3s;
+        border: 0.3px solid #8b79a59a;
+}
+.imagen2 .im2 {
+
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  transition: .3s;
+  border-radius: 8px;
+  content: "";
+ filter: drop-shadow(15px 15px 50px #130623);
+  opacity: 1;
+  margin-bottom: 10px;
+        transition: border-color 0.3s;
+        border: 0.3px solid #8b79a59a;
+}     
+
+.imagen2 {
+
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+transform: scale(0.9);
+
+}
+.image-container {
+  width: 33.33%;
+  float: left;
+  margin-right: 1%;
+  margin-bottom: 1%;
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  transition: border 0.3s ease;
+}
+
+.image-container:hover img {
+  border: 3px solid blue;
+  box-sizing: border-box;
+}
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++*/
+body77{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 60vh;
+background: #170a28;
+
+}
+
+
+.card{
+  position: relative;
+  background: linear-gradient(106.32deg, #26194d 14.32%,
+  rgb(64, 43, 120) 139.97%);
+  border-radius: 20px ;
+  height: 420px;
+  width: 296px;
+  margin: 20px 0;
+  box-shadow: 0 0 20px #35227a1a;
+  
+}
+
+.card .card-content{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  position: relative;
+  z-index: 100;
+}
+
+.swiper{
+  width: 950px;
+}
+
+
+section{
+  position: relative;
+  width: 450px;
+  width: 1075px;
+  display: flex;
+  align-items: center;
+}
+section .card .imagen{
+
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  padding: 3px;
+  background: #ffffff;
+  box-shadow: 0px -1px 4px 2px rgba(0, 0, 0, 0.25);
+}
+section .card .imagen img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+}
+.box1{
+position: absolute;
+width: 100%;
+height: 43%;
+border-radius: 20px 20px 0 0;
+background: linear-gradient(106.32deg, #26194d 14.32%,
+rgb(64, 43, 120) 139.97%);
+}
+.card .media-icons{
+
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card .media-icons i{
+color: #f0f0f0;
+opacity: 0.7;
+margin-top: 10px;
+transition: all 0.3s ease;
+cursor: pointer;
+}
+.card .media-icons i:hover{
+  opacity: 1;
+  color: #190931;
+}
+.card .name-profession{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+.name-profession .name{
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: "Blender Pro";
+text-transform: uppercase;
+}
+.name-profession .profession{
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffffff;
+  font-family: "Blender Pro";
+text-transform: uppercase;
+}
+.card .rating{
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+}
+.card .rating i{
+  font-size: 18px;
+  margin: 0 2px;
+  color: #7736d0;
+}
+section .card .about{
+  display: flex;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-family: 'Blender Pro';
+  font-weight: 100;
+  font-size: 12px;
+}
+.card .button1{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+.card .b1 button{
+  background: #dad2e4;
+  color: #428a00;
+}
+.card .button1 button{
+  outline: none;
+  border: none;
+  color: #ffffff;
+  padding: 8px 22px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background: #7736d0;
+}
+.card .button1 button:hover{
+  opacity: 0.8;
+}
+.swiper-pagination{
+  position: absolute;
+  top: 520px;
+}
+.swiper-pagination-bullet{
+  height: 15px;
+  width: 15px;
+  border-radius: 5px;
+  background: #428a00;
+}
+.swiper-button-next, .swiper-button-prev{
+  opacity: 0.7;
+  color: #fff;
+  transition: all 0.3s none;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover{
+  opacity: 1;
+  color: #7636d08c;
+}
+
+.imagenpresent{
+  top: 8%;
+  position: relative;
+}
+
+
+/*-----------------------*/

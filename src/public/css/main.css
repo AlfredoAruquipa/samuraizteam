@@ -342,6 +342,63 @@ header3 .menu{
       
   } 
 }
+/*--------------------------mediasoail2------------------------------*/
+.social-media-bar2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+  place-items: center;
+  padding: 4px 180px;
+  color: #beb3cf;
+ 
+  gap: 1.9rem;/* espacio entre iconos */ 
+  cursor: pointer;
+  font-size: 20px;
+  transition: filter .15s ease-in-out,fill .15s ease-in-out;
+}
+
+.social-media-bar2 a {
+color: #beb3cf;
+font-size: 20px;
+
+}
+
+@media (max-width: 991px){
+.social-media-bar2 a{
+  color:#a499b494;
+  font-size: 0;
+  
+ 
+}
+}
+@media (max-width: 991px){
+  header77 .social-media-bar2 {
+top: 0;
+left: 0;
+position: relative;
+
+  }
+  }
+@media (max-width: 991px){
+  header77.down {
+    top: -500px;
+  }
+  }
+
+@media (max-width: 991px){
+      header .brand img{
+        position: relative;
+       height: 50px; 
+       left: 125px;
+    
+    
+} } 
  /*--------------------------------------------------------------------------*/
 
        /*scroll*/
@@ -466,6 +523,23 @@ header3 .menu{
   position: relative;
   padding: 80px 100px;
 }
+.title-row4 {
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+  margin-bottom: 2rem;
+  top: 50px;
+  position: relative;
+  padding: 0 100px;
+}
+.title-row4 .title4 {
+  font-size: 2.5rem;
+  font-family: "Blender Pro";
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  }
+
   .title-row2 .title2 {
 font-size: 2.5rem;
 font-family: "Blender Pro";
@@ -484,6 +558,9 @@ color: #fff;
     padding: .5rem 1.5rem;
     font-weight: 700;
     font-size: 1rem;
+    color: #fff;
+    font-family: "Blender Pro";
+    text-transform: uppercase;
     color: #fff;
   }
 
@@ -507,6 +584,26 @@ color: #fff;
     color: #fff;
 
 } } 
+
+@media (max-width: 991px){
+  .title-row4 {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    margin-bottom: 2rem;
+    top: 30px;
+    position: relative;
+    padding: 20px 20px;
+
+} } 
+@media (max-width: 991px){
+.title-row4 .title4 {
+  font-size: 1.6rem;
+  font-family: "Blender Pro";
+  text-transform: uppercase;
+  color: #fff;
+
+} } 
 @media (max-width: 991px){
   .title-row2 {
     display: flex;
@@ -518,6 +615,7 @@ color: #fff;
     padding: 20px 20px;
 
 } } 
+
 @media (max-width: 991px){
 .title-row2 .title2 {
   font-size: 1.2rem;
@@ -536,6 +634,9 @@ color: #fff;
     font-weight: 50;
     font-size: 1rem;
     color: #fff;
+    font-family: "Blender Pro";
+text-transform: uppercase;
+color: #fff;
 
 } } 
 
@@ -633,3 +734,43 @@ footer3.down3 {
   border-block: 1px solid #7E2DF978;
   bottom: 0;
 }}
+
+/*--------------imagenIntegrantes-------------*/
+.img-overlay {
+  background-image: linear-gradient(to bottom, rgba(17, 6, 39, 0.966), rgba(24, 2, 54, 0.753)), url('/img/fond01.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 500px; /* o el alto que desees */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-transform: uppercase;
+
+  font-family: 'Blender Pro';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 4rem; /* o el tamaño de fuente que desees */
+ 
+}
+@media (max-width: 991px){
+.img-overlay {
+  background-image: linear-gradient(to bottom, rgba(17, 6, 39, 0.966), rgba(13, 1, 34, 0.856)), url('/img/fond01.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 400px; /* o el alto que desees */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-transform: uppercase;
+
+  font-family: 'Blender Pro';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 2.5rem; /* o el tamaño de fuente que desees */
+  opacity: 0.8; /* o el nivel de opacidad que desees */
+}}
+
