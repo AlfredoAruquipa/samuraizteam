@@ -215,7 +215,7 @@ header3 .menu{
       padding: 80px 50px;
       transition: 0.5s;
       transition-property: right;
-      border-block: 1px solid #ff1a8d;
+      border-block: 1px solid #a03cfc;
     }
   
     header .menu ul{
@@ -706,7 +706,7 @@ footer3.down3 {
     z-index: 999;
     position: fixed;
     top: 50;
-    left: 50;
+    left: 0px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -776,4 +776,91 @@ footer3.down3 {
   font-size: 2.5rem; /* o el tamaño de fuente que desees */
   opacity: 0.8; /* o el nivel de opacidad que desees */
 }}
+/*----------------aboutventana---------------------*/
+@media (max-width: 991px){
+  headerAbout{
+  display: flex;
+width: 100%;
+}}
 
+@media (max-width: 991px){
+  bodyAbout{
+    display: flex;
+width: 100%;
+  }}
+
+  @media (max-width: 991px){
+    footerAbout{
+   
+    top:50px ;
+    width: 100%;
+    }}
+
+    
+    
+headerAbout{
+  display: flex;
+ width: 100%;
+}
+
+
+
+ bodyAbout{
+   
+    width: 100%;
+    height: 100%;
+  }
+
+ 
+    footerAbout{
+   
+    top:50px ;
+    width: 100%;
+    }
+
+    
+/*----------------aboutventanaParallaxScroll---------------------*/
+
+    .parallax-container {
+      position: relative;
+      height: 100vh; /* Use viewport height for full-height container */
+      width: 100%;
+    }
+    
+    .parallax-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("/img/fond3.jpg");
+      background-size: cover;
+      background-attachment: fixed;
+      z-index: -1;
+      max-width: 100%
+    }
+    @media (max-width: 991px){
+    .parallax-container {
+      position: relative;
+      height: 100%; /* Use viewport height for full-height container */
+      width: 100%;
+    }
+    
+    .parallax-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("/img/fond3.jpg");
+      background-size: cover;
+      background-attachment: fixed;
+      z-index: -1;
+      max-width: 100%
+    }}
+    
+    
+    
+   
+    
+  
