@@ -178,8 +178,11 @@ header3 .menu{
   }
   
   header .menu a:hover{
-    color: #000;
-    background: #fff;
+    color: #7e2df9;
+    transition: color .35s ease,text-shadow .35s ease;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 20px #a03cfc;
+  
   }
   
   .section-two{
