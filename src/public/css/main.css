@@ -86,9 +86,14 @@
     background: #180a279c;
     backdrop-filter: blur(2px); 
     border-block: 1px solid #7f2df96e;
-  
-  
   }  
+  @media (max-width: 991px){
+  header.down{
+    background: #180a279c;
+    backdrop-filter: blur(2px); 
+    border-block: 1px solid #7f2df96e;
+  }  } 
+
   header77 {
     z-index: 999;
     position: fixed;
@@ -100,7 +105,7 @@
     align-items: center;
     height: 39px;
     transition: 0.6s;
-    border-block: 1px solid #7f2df96e;
+   
 }
 header77.down{
   background: #180a279c;
@@ -203,6 +208,7 @@ header3 .menu{
     }
     header .btn{
       display: block;
+      color: #ffffff;
     }
   /*menulateral modomovil*/
     header .menu{
@@ -313,11 +319,10 @@ header3 .menu{
 @media (max-width: 991px){
   .social-media-bar a{
     color:#a499b494;
-    font-size: 25px;
-    
-   
-  }
-  }
+    font-size: 25px;  
+  }}
+
+
   @media (max-width: 991px){
     header77 .social-media-bar {
 
@@ -823,7 +828,7 @@ headerAbout{
 
     .parallax-container {
       position: relative;
-      height: 100vh; /* Use viewport height for full-height container */
+      height: 100%; /* Use viewport height for full-height container */
       width: 100%;
     }
     
