@@ -204,7 +204,7 @@ header3 .menu{
   
   @media (max-width: 991px){
     header, header.down{
-        padding: 20px 40px;
+        padding: 20px 10px;
         top: 0;
     }
     header .btn{
@@ -419,7 +419,7 @@ position: relative;
       header .brand img{
         position: relative;
        height: 50px; 
-       left: 125px;
+       left: 155px;
     
     
 } } 
@@ -655,7 +655,7 @@ color: #fff;
     transition: background var(--transition);
     border-radius: 4px;
     padding: .5rem 1.5rem;
-    font-weight: 50;
+ 
     font-size: 1rem;
     color: #fff;
     font-family: "Blender Pro";
