@@ -839,6 +839,9 @@ bodywe{
 .arrows button:hover{
     background-color: rgba(132, 0, 255, 0.333);
 }
+.arros:hover{
+  background-color: rgba(132, 0, 255, 0.333);
+}
 .carousel .list .item{
     display: none;
 }
