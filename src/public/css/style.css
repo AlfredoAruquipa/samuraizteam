@@ -693,7 +693,7 @@ bodywe{
     font-family: Poppins;
     margin: 0;
     font-size: 16px;
-    background-color: #4f8b69;
+    background-color: #822cfc;
 }
 *{
     box-sizing: border-box;
@@ -703,8 +703,9 @@ bodywe{
     list-style: none;
 }
 :root{
-    --border-color: #fff5;
-    --w-image: 500px;
+ 
+    --border-color:#7E2DF978;
+    --w-image: 495px;
     --calculate: calc(3 / 2);
 }
 .carousel{
@@ -734,7 +735,7 @@ bodywe{
     top: 50px;
     left: 50px;
     content: '';
-    background-color: red;
+    background-color: #44116e;
     width: 400px;
     height: 300px;
     z-index: 10;
@@ -762,19 +763,23 @@ bodywe{
     justify-content: end;
     align-items: center;
     font-weight: 500;
+    border-block: 1px solid #5d1cbe78;
 }
 .carousel .list .item .image img{
-    width: 50%;
+    width: 80%;
     margin-bottom: 20px;
-    filter: drop-shadow(0 150px 50px #9e0c0c55);
+    filter: drop-shadow(0 250px 50px #1c073b78);
+   
 }
 .carousel .list .item .image figcaption{
-    font-family: 'Aboreto';
-    font-weight: bold;
+  font-family: 'Blender Pro';
+  font-weight: normal;
+  font-style: normal;
     font-size: 1.3em;
     text-align: right;
     margin-bottom: 30px;
     width: 70%;
+    color: #fff;
 }
 .carousel .list .item .main-content{
     height: 100%;
@@ -786,15 +791,19 @@ bodywe{
 }
 .carousel .list .item .main-content .content h2{
     font-size: 5em;
-    font-family: 'Aboreto';
+    font-family: 'Blender Pro';
+        font-weight: bold;
+        font-style: normal;
 }
 .carousel .list .item .main-content .content .price{
-    font-family: 'Aboreto';
+  font-family: 'Blender Pro';
+  font-weight: bold;
+  font-style: normal;
     font-size: 3em;
     margin: 20px 0;
 }
 .carousel .list .item .main-content .content .addToCard{
-    background-color: #4f8b69;
+    background-color: #7E2DF978;
     color: #fff;
     padding: 10px  30px;
     font-family: Poppins;
@@ -813,6 +822,7 @@ bodywe{
     grid-template-rows: 50px;
     justify-content: end;
     gap: 10px;
+        left: -2%;
 }
 .arrows button{
     background-color: transparent;
@@ -822,12 +832,12 @@ bodywe{
     font-size: large;
     font-weight: bold;
     line-height: 0;
-    box-shadow: 0 10px 40px #5555;
+    box-shadow: 0 10px 40px #1e064278;
     cursor: pointer;
     transition: 0.5s;
 }
 .arrows button:hover{
-    background-color: #eee5;
+    background-color: rgba(0, 255, 42, 0.333);
 }
 .carousel .list .item{
     display: none;
@@ -924,11 +934,15 @@ bodywe{
         width: 100%;
         left: 0;
         justify-content: center;
+        border-block: 1px solid #7E2DF978;
     }
     .carousel .list .item .image figcaption{
         color: #fff;
         width: 100%;
         text-align: center;
+        font-family: 'Blender Pro';
+        font-weight: bold;
+        font-style: normal;
     }
     .carousel .list .item .main-content .content{
         display: none;
