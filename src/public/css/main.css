@@ -325,14 +325,17 @@ header3 .menu{
 
 
   @media (max-width: 991px){
-    header77 .social-media-bar {
+   .social-media-bar {
+      top: 450%;
+      left: 20%;
+      position: absolute;
+  }
 
- top: 200px;
- left: 70px;
- position: relative;
+  .social-media-bar:hover {
+    opacity: 0;
+}
+    }
 
-    }
-    }
   @media (max-width: 991px){
     header77.down {
       top: -500px;
@@ -417,12 +420,16 @@ position: relative;
 
 @media (max-width: 991px){
       header .brand img{
-        position: relative;
-       height: 50px; 
-       left: 155px;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        top: 40%;
+        left: 45%;
+    }
     
     
-} } 
+} 
  /*--------------------------------------------------------------------------*/
 
        /*scroll*/
