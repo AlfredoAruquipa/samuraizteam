@@ -16,10 +16,26 @@
         flex-basis: calc(33.333% - 6rem);
         margin: 0;
         font-family: 'Blender Pro';
-      font-weight: normal;
-  font-style: normal;
+        font-weight: normal;
+         font-style: normal;
       }
       
+
+      @media (max-width: 991px){
+      .column a:hover{
+        color: #a03cfc;
+        transition: color .35s ease,text-shadow .35s ease;
+        text-shadow: 0px 0px 20px #a03cfc;
+      }}
+
+
+      .column a:hover{
+        color: #a03cfc;
+        transition: color .35s ease,text-shadow .35s ease;
+        text-shadow: 0px 0px 20px #a03cfc;
+      }
+
+
       .container2 {
         display: flex;
         justify-content: space-between;
@@ -28,8 +44,8 @@
         width: 100%;
         padding: 00 90px;
         font-family: 'Blender Pro';
-      font-weight: normal;
-  font-style: normal;
+        font-weight: normal;
+        font-style: normal;
     }
       
       .social-media2 {
@@ -94,13 +110,13 @@
       .column p {
         margin-bottom: 1rem;
         font-family: 'Blender Pro';
-        font-weight: 100;
+        font-weight: bold;
         font-style: normal;
       }
       .column a {
         
         font-family: 'Blender Pro';
-        font-weight: 100;
+        font-weight: bold;
         font-style: normal;
         color: #ffffff;
         text-decoration: none;

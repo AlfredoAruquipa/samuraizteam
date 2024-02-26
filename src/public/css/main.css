@@ -178,10 +178,11 @@ header3 .menu{
     font-family: 'Blender Pro';
     font-weight: bold;
     transition-property: color, background;
-   
-    
   }
   
+
+
+
   header .menu a:hover{
     color: #7e2df9;
     transition: color .35s ease,text-shadow .35s ease;
@@ -371,19 +372,34 @@ header3 .menu{
   transition: filter .15s ease-in-out,fill .15s ease-in-out;
 }
 
+.social-media-bar2 a:hover {
+  color: #a03cfc;
+  transition: color .35s ease,text-shadow .35s ease;
+  text-shadow: 0px 0px 20px #a03cfc;
+}
+
+.social-media-bar2 .letraSocial {
+  color: #beb3cf;
+  font-size: 16px;
+  text-decoration: none;
+  font-family: 'Blender Pro';
+  font-weight: bold;
+  font-style: normal;
+  }
+
 .social-media-bar2 a {
 color: #beb3cf;
 font-size: 20px;
-
 }
 
 @media (max-width: 991px){
 .social-media-bar2 a{
   color:#a499b494;
   font-size: 0;
-  
- 
 }
+.social-media-bar2 .letraSocial {
+  font-size: 0px;
+  }
 }
 @media (max-width: 991px){
   header77 .social-media-bar2 {
@@ -830,6 +846,7 @@ headerAbout{
       position: relative;
       height: 100%; /* Use viewport height for full-height container */
       width: 100%;
+ 
     }
     
     .parallax-background {
@@ -849,6 +866,7 @@ headerAbout{
       position: relative;
       height: 100%; /* Use viewport height for full-height container */
       width: 100%;
+
     }
     
     .parallax-background {
@@ -865,7 +883,7 @@ headerAbout{
     }}
     
     
-    
+    /*------------------entradassalidaspaginas---------*/
    
     
-  
+   
