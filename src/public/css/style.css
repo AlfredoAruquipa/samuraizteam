@@ -955,3 +955,11 @@ bodywe{
         justify-content: center;
     }
 }
+
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  top: 16%;
+}
