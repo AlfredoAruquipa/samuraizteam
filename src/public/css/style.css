@@ -836,7 +836,7 @@ bodywe{
 .arrows button{
     background-color: transparent;
     border-image: linear-gradient(90deg, rgba(250, 204, 165, .7) 0%, rgba(126, 45, 249, .7)) 1 / 1 / 0 stretch;
-    box-shadow: 0 0 20px #d1d1d115;
+    box-shadow: 0 0 20px #d1d1d11f;
     color: #fff;
     font-family: monospace;
     font-size: large;
