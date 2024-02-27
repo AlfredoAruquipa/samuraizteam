@@ -771,7 +771,8 @@ bodywe{
     justify-content: end;
     align-items: center;
     font-weight: 500;
-    border-block: 1px solid #5d1cbe78;
+    border-image: linear-gradient(90deg, rgba(250, 204, 165, .7) 0%, rgba(126, 45, 249, .7)) 1 / 1 / 0 stretch;
+    box-shadow: 0 0 20px #d1d1d115;
 }
 .carousel .list .item .image img{
   width: 60%;
@@ -834,13 +835,14 @@ bodywe{
 }
 .arrows button{
     background-color: transparent;
-    border: 1px solid var(--border-color);
+    border-image: linear-gradient(90deg, rgba(250, 204, 165, .7) 0%, rgba(126, 45, 249, .7)) 1 / 1 / 0 stretch;
+    box-shadow: 0 0 20px #d1d1d115;
     color: #fff;
     font-family: monospace;
     font-size: large;
     font-weight: bold;
     line-height: 0;
-    box-shadow: 0 10px 40px #1e064278;
+   
     cursor: pointer;
     transition: 0.5s;
 }
@@ -971,3 +973,8 @@ bodywe{
   overflow: hidden;
   top: 0;
 }
+.imagenFooter img{
+width: 20% ;
+}
+
+
