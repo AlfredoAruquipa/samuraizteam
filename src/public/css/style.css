@@ -709,11 +709,18 @@ bodywe{
     --calculate: calc(3 / 2);
 }
 .carousel{
-    margin-top: -80px;
+    margin-top: -10px;
     width: 100%;
     height: 70vh;
     overflow: hidden;
 }
+@media screen and (max-width: 767px){
+.carousel{
+  margin-top: -10px;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+}}
 .carousel .list{
     height: 100%;
    
@@ -735,7 +742,8 @@ bodywe{
     top: 50px;
     left: 50px;
     content: '';
-    background-color: #44116e;
+    /*para poner color a fondo*/
+ 
     width: 400px;
     height: 300px;
     z-index: 10;
@@ -957,9 +965,9 @@ bodywe{
 }
 
 
-.carousel-inner {
+.carousel-innerVideo {
   position: relative;
   width: 100%;
   overflow: hidden;
-  top: 16%;
+  top: 0;
 }
