@@ -190,7 +190,7 @@
 
 
       body90 {
-        font-family: Arial, sans-serif;
+        font-family: 'Blender Pro';
         margin: 0;
         padding: 0;
         background-color: #f0f0f0;
@@ -219,7 +219,7 @@
       border-image: linear-gradient(90deg,rgba(250,204,165,.7) 0%,rgba(126,45,249,.7)) 1/1/0 stretch;
       box-shadow: 0 0 20px #d1d1d11a;
       height: 270px;
-      bottom: -90px;
+      bottom: 60px;
   }}
      
       
@@ -994,28 +994,343 @@ width: 35% ;
 
 }
 }
-/*
+
 .imagenIndex{
   position: relative;
- 
- left: 30%;
-  width: 10%;
-  border-radius: 4px;
-  border: 1px solid #7E2DF9;
+  left: 10%;
+  width: 100%;
+  height: auto;
+}
+.imagenIndex a{
+
+  font-weight: 700;
+  font-size: 1rem;
+  color: #fff;
+ font-family: "Blender Pro";
 }
 .imagenIndex img{
-  width: 10%;
+  border: 1px solid #faeba963;
+  border-radius: 8px;
+  width: 35%;
+  background: linear-gradient(180.21deg, rgba(126, 45, 249, 0) 32.04%, rgba(126, 45, 249, .15) 99.81%), linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2));
+  filter: drop-shadow(15px 15px 50px #130623);
+  opacity: 1;
+
+}
+.imagenIndex  img:hover{
+  border: 1px solid #7E2DF9;
+  border-radius: 5px;
+  width: 36%;
+  
+}
+.imagenIndex2  img:hover{
+  border: 1px solid #7E2DF9;
+  border-radius: 5px;
+  width: 21%;
+  
+}
+.imagenIndex2{
+  position: relative;
+  left: 50%;
+  width: 100%;
+  height: auto;
+  top: -20%;
+  border: 1px solid #7E2DF9;
+  border-radius: 5px;
+  display: block ;
+line-height: 0 ;
+}
+.imagenIndex2 a{
+
+  font-weight: 700;
+  font-size: 1rem;
+  color: #fff;
+ font-family: "Blender Pro";
+}
+.imagenIndex2 img{
+  border: 1px solid #faeba963;
+  border-radius: 8px;
+  width: 20%;
+  background: linear-gradient(180.21deg, rgba(126, 45, 249, 0) 32.04%, rgba(126, 45, 249, .15) 99.81%), linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2));
+  filter: drop-shadow(15px 15px 50px #130623);
+  opacity: 1;
+
+}
+
+/*
   border-radius: 5px;
   border: 1px solid  rgba(250, 204, 165, .7);
   border-image: linear-gradient(90deg, rgba(250, 204, 165, .7) 0%, rgba(126, 45, 249, .7)) 1 / 1 / 0 stretch;
   box-shadow: 0 0 20px #d1d1d11f;
+
+  border-radius: 4px;
+  border: 1px solid #7E2DF9;
+
+*/
+/*----------------------------index imagen-------------------------*/
+body01{
+    background-color: #e1dad0;
+    margin: 0;
+    font-family: 'Blender Pro';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 15px;
 }
 
+.carousel01{
+    width: 100%;
+   
+    height: 720px;
+    color: #eee;
+    margin-top: -50px;
+    position: relative;
+}
+.carousel01 .list{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+.carousel01 .list .item{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.carousel01 .list .item::before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color);
+    content: var(--title);
+    font-size: 15em;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee4;
+    z-index: -1;
+}
+.carousel01 .list .item .image{
+    flex-shrink: 0;
+    width: 500px;
+    height: 490px;
+    --left: -150px;
+    background: 
+        var(--img-src) var(--left) 0,
+     no-repeat;
+    background-size: 100% auto;
+    background-blend-mode: multiply;
+   
+    -webkit-mask-size: 100% auto;
+    -webkit-mask-repeat: no-repeat;
+   
+    mask-size: 100% auto;
+    mask-repeat: no-repeat;
+    transition: background 1s ease-in-out;
+    border: 1px solid #faeba963;
+  border-radius: 8px;
+  filter: drop-shadow(15px 15px 50px #130623);
+  opacity: 1;
+}
+.carousel01 .list .item .content{
+    width: 1140px;
+    max-width: 90%;
+    margin: auto;
+    height: 100%;
+    padding-top: 50px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+.carousel01 .list .item .info .title{
+    font-size: 2.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1em;
+    font-family: 'Blender Pro';
+}
+.carousel01 .list .item .info .category{
+    opacity: .7;
+    font-family: "Blender Pro";
+}
+.carousel01 .list .item .info .des{
+    margin: 1em 0;
+    font-size: 20px;
+    font-family: 'Blender Pro';
+ font-weight: 100;
+}
+.carousel01 .list .item .info a{
+    display: inline-flex;
+    gap: 20px;
+    text-decoration: none;
+    color: #eee;
+    font-weight: 20;
+}
+/* set active item */
+.carousel01 .list .item{
+    z-index: 1;
+}
+.carousel01 .list .item.active{
+    z-index: 2;
+}
+.carousel01 .list .item.active .image{
+    --left: 0;
+}
+/* arrows */
+.arrows button{
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+   
+    font-family: monospace;
+    background-color: #eee3;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+  
+    cursor: pointer;
+    left: 30%;
+    transition: background 0.5s,
+                color 0.5s;
+}
+.arrows button#next{
+    left: unset;
+    right: 10%;
+}
+.arrows button:hover{
+    background-color: #eee;
+    color: #000;
+}
+.dots li{
+    width: 15px;
+    height: 15px;
+    background-color: #eee5;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.dots li.active{
+    background-color: #eee;
+}
+.dots{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    bottom: 30px;
+    z-index: 2;
+    width: max-content;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background 0.5s;
+}
+.carousel01{
+    overflow: hidden;
+}
+/* responsive */
+@media screen and (max-width: 767px){
+    .carousel01{
+        height: 100vh;
+    }
+    .carousel01 .list .item .info{
+        position: absolute;
+        bottom: 10%;
+        width: 120%;
+        padding: 30px;
+        box-sizing: border-box;
+        text-align: center;
+        backdrop-filter: blur(20px);
+        height: 31%;
+    }
+    .carousel01 .list .item .info .title{
+      font-size: 15px;
 
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1em;
+        font-family: 'Blender Pro';
+    }
+    .carousel01 .list .item .info .des{
+     
+        text-align: justify;
+        font-size: 15px;
+        font-family: 'Blender Pro';
+     font-weight: 100;
+    }
+    .carousel01 .list .item .content{
+        justify-content: center;
+        align-items: start;
+    }
+    .arrows button{
+        top: unset;
+        bottom: 40px;
+    }
+    .carousel01 .list .item .image{
+       
+        width: 350px;
+        height: 490px;
+      
+      
+    }
+}
 
- <div class="imagenIndex">
-       <img src="/img/LIDERES.png" alt="">
-      </div>
-*/
+/* effect */
+@keyframes transformAnimation{
+    from{
+        transform: translateX(var(--transform-from));
+    }to{
+        transform: translateX(var(--transform-to));
+    }
+}
+
+.carousel01.effect .item .image{
+    animation: transformAnimation 1s ease-in-out 1 forwards;
+}
+.carousel01.effect .item .info .title,
+.carousel01.effect .item .info .category,
+.carousel01.effect .item .info .des,
+.carousel01.effect .item .info a{
+    animation: transformAnimation 1s ease-in-out 1 forwards;
+}
+.carousel01.effect .item .info .category{
+    animation-delay: 0.1s;
+}
+.carousel01.effect .item .info .des{
+    animation-delay: 0.2s;
+}
+.carousel01.effect .item .info a{
+    animation-delay: 0.3s;
+}
+.carousel01.effect .item.active{
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    animation: animationClipPath 0.9s ease-in-out 1 forwards;
+}
+@keyframes animationClipPath{
+    to{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+.carousel01.effect{
+    --transform: 300px;
+}
+.carousel01.effect .item.active{
+    --transform-from: calc(var(--transform) * -1);
+    --transform-to: 0px;
+}
+.carousel01.effect .item{
+    --transform-from: 0;
+    --transform-to: var(--transform);
+}
+
 
 

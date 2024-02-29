@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body01>
+    
+    <header>
+    
+    </header>
+    <!-- slider -->
+    <div class="carousel01">
+        <div class="list">
+            <div class="item active" 
+            style="
+            --img-src: url('/img/item1.png');
+            --bg-color: #26194c;
+            --title: 'Lemon'
+            ">
+                <div class="content">
+                    <div class="image"></div>
+                    <div class="info">
+                        <div class="title">
+                            Lemon-flavored Soda
+                        </div>
+                        <div class="category">
+                            Fruit Soda
+                        </div>
+                        <div class="des">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          </div>
+                        <a href="">
+                          
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item" 
+            style="
+            --img-src: url('/img/item2.png');
+            --bg-color: #402a78;
+            --title: 'Orange'
+            ">
+                <div class="content">
+                    <div class="image"></div>
+                    <div class="info">
+                        <div class="title">
+                            Orange-flavored Soda
+                        </div>
+                        <div class="category">
+                            Fruit Soda
+                        </div>
+                        <div class="des">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          </div>
+                        <a href="">
+                          
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item" 
+            style="
+            --img-src: url('/img/item3.png');
+            --bg-color: #3b3b3c;
+            --title: 'Apple'
+            ">
+                <div class="content">
+                    <div class="image"></div>
+                    <div class="info">
+                        <div class="title">
+                            Apple-flavored Soda
+                        </div>
+                        <div class="category">
+                            Fruit Soda
+                        </div>
+                        <div class="des">
+                            Lorem ipsum dolor sit amet consectetur 
+                          </div>
+                        <a href="">
+                           
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <ul class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <script>
+      let list = document.querySelectorAll('.carousel01 .list .item');
+let carousel01 = document.querySelector('.carousel01');
+let dots = document.querySelectorAll('.dots li');
+let nextBtn = document.getElementById('next');
+let prevBtn = document.getElementById('prev');
+
+let lastPosition = list.length - 1;
+let active = 0;
+let zIndex = 2;
+
+nextBtn.onclick = () => {
+    let newValue = active + 1 > lastPosition ? 0 : active + 1;
+    setItemActive(newValue, showSlider);
+}
+prevBtn.onclick = () => {
+    let newValue = active - 1 < 0 ? lastPosition : active - 1;
+    setItemActive(newValue, showSlider);
+}
+
+dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+        setItemActive(index, showSlider);
+    })
+})
+
+const setItemActive = (newValue, callbackFunction) => {
+    if(newValue === active) return;
+    let type = newValue > active ? 'next' : 'prev';
+    active = newValue;
+    callbackFunction(type);
+}
+let removeEffect;
+let autoRun = setTimeout(() => {
+    nextBtn.click();
+}, 5000);
+const showSlider = (type) => {
+    carousel01.style.pointerEvents = 'none';
+    // find Item Active Old
+    let itemActiveOld = document.querySelector('.carousel01 .list .item.active');
+    if(itemActiveOld) itemActiveOld.classList.remove('active');
+    zIndex++;
+    list[active].style.zIndex = zIndex;
+    list[active].classList.add('active');
+
+    if(type === 'next'){
+        carousel01.style.setProperty('--transform', '300px');
+    }else{
+        carousel01.style.setProperty('--transform', '-300px');
+    }
+    carousel01.classList.add('effect');
+
+    // dots
+    // find dot active old
+    let dotActiveOld = document.querySelector('.dots li.active');
+    if(dotActiveOld) dotActiveOld.classList.remove('active');
+    dots[active].classList.add('active');
+
+    clearTimeout(removeEffect);
+    removeEffect = setTimeout(() => {
+        carousel01.classList.remove('effect');
+        carousel01.style.pointerEvents = 'auto';
+    }, 1500);
+
+    clearTimeout(autoRun);
+    autoRun = setTimeout(() => {
+        nextBtn.click();
+    }, 5000);
+}
+
+    </script>
+</body01>
+</html>
