@@ -963,7 +963,7 @@ bodywe{
     .arrows{
         left: 50%;
         justify-content: center;
-        bottom: 180px;
+        bottom: 30px;
     }
    
       
@@ -1257,7 +1257,7 @@ body01{
         box-sizing: border-box;
         text-align: center;
         backdrop-filter: blur(20px);
-        height: 30%;
+        height: 31%;
         left: 2%;
     }
     .carousel01 .list .item .image:hover{
