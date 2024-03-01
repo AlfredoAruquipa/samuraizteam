@@ -211,7 +211,7 @@
     @media (max-width: 991px){   
     .match-container {
       max-width: 1380px;
-      margin: 150px 30px;
+      margin: 10px 30px;
       background: #7f2df900;
       position: relative;
       background: #7E2DF90D;
@@ -1077,7 +1077,7 @@ body01{
   font-weight: bold;
   font-style: normal;
   font-size: 15px;
-  top: 10%;
+  top: 7%;
 }
 
 .carousel01{
@@ -1105,7 +1105,7 @@ body01{
 .carousel01 .list .item::before{
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 90%;
     background-color: var(--bg-color);
     content: var(--title);
     font-size: 15em;
@@ -1119,9 +1119,11 @@ body01{
 }
 .carousel01 .list .item .image{
     flex-shrink: 0;
-    width: 500px;
-    height: 490px;
-    --left: -150px;
+    position: relative;
+    bottom: 10%;
+    width: 550px;
+    height: 550px;
+    --left: -140px;
     background: 
         var(--img-src) var(--left) 0,
      no-repeat;
@@ -1134,10 +1136,14 @@ body01{
     mask-size: 100% auto;
     mask-repeat: no-repeat;
     transition: background 1s ease-in-out;
-    border: 1px solid #faeba963;
+    border: 1px solid #bc9d66;
   border-radius: 8px;
   filter: drop-shadow(15px 15px 50px #130623);
   opacity: 1;
+}
+
+.carousel01 .list .item .image:hover{
+  border: 1px solid #7E2DF9;
 }
 .carousel01 .list .item .content{
     width: 1140px;
@@ -1147,9 +1153,11 @@ body01{
     padding-top: 50px;
     box-sizing: border-box;
     display: flex;
-    gap: 50px;
+    gap: 150px;
     justify-content: space-between;
     align-items: center;
+    left: -8%;
+    position: relative;
 }
 .carousel01 .list .item .info .title{
     font-size: 2.5em;
@@ -1186,29 +1194,23 @@ body01{
     --left: 0;
 }
 /* arrows */
-.arrows button{
-    position: absolute;
-    top: 50%;
-    z-index: 2;
-    width: 40px;
-    height: 40px;
-   
-    font-family: monospace;
-    background-color: #eee3;
-    border: none;
-    color: #fff;
-    font-weight: bold;
-  
-    cursor: pointer;
-    left: 30%;
-    transition: background 0.5s,
-                color 0.5s;
+.arrows1 button01{
+  background-color: transparent;
+  border-image: linear-gradient(90deg, rgba(250, 204, 165, .7) 0%, rgba(126, 45, 249, .7)) 1 / 1 / 0 stretch;
+  box-shadow: 0 0 20px #d1d1d11f;
+  color: #fff;
+  font-family: monospace;
+  font-size: large;
+  font-weight: bold;
+  line-height: 0;
+  cursor: pointer;
+  transition: 0.5s;
 }
-.arrows button#next{
+.arrows1 button#next{
     left: unset;
     right: 10%;
 }
-.arrows button:hover{
+.arrows1 button:hover{
     background-color: #eee;
     color: #000;
 }
@@ -1229,10 +1231,10 @@ body01{
     display: flex;
     gap: 20px;
     position: absolute;
-    bottom: 190px;
+    bottom: 120px;
     z-index: 2;
     width: max-content;
-    left: 50%;
+    left: 54%;
     transform: translateX(-50%);
     transition: background 0.5s;
 }
@@ -1245,17 +1247,21 @@ body01{
         height: 100vh;
     }
     .dots{
-      bottom: 190px;
+      bottom: 30%;
     }
     .carousel01 .list .item .info{
         position: absolute;
-        bottom: 20%;
-        width: 120%;
+        bottom: 27%;
+        width: 113%;
         padding: 30px;
         box-sizing: border-box;
         text-align: center;
         backdrop-filter: blur(20px);
         height: 30%;
+        left: 2%;
+    }
+    .carousel01 .list .item .image:hover{
+      border: 1px solid #7E2DF9;
     }
 
     .carousel01 .list .item::before {
@@ -1286,7 +1292,7 @@ body01{
         justify-content: center;
         align-items: start;
     }
-    .arrows button{
+    .arrows1 button{
         top: unset;
         bottom: 40px;
     }
@@ -1294,8 +1300,9 @@ body01{
        
         width: 350px;
         height: 490px;
-      
-      
+        top: unset;
+        bottom: 40px;
+      left: 9%;
     }
 }
 
