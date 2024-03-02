@@ -476,7 +476,9 @@ position: relative;
         height: auto;
         margin-bottom: 10px;
         transition: border-color 0.3s;
-        border: 0.3px solid #8b79a59a;
+     
+        border: 1px solid #faeba963;
+        border-radius: 8px;
     }
    
     

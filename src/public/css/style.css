@@ -20,9 +20,11 @@
         margin: 0;
         font-family: 'Blender Pro';
         font-weight: normal;
-         font-style: normal;
+        font-style: normal;
+        left: 90px;
+         position: relative;
       }
-      
+   
 
       @media (max-width: 991px){
       .column a:hover{
@@ -49,7 +51,10 @@
         font-family: 'Blender Pro';
         font-weight: normal;
         font-style: normal;
-    }
+        bottom: 25px;
+        position: relative;
+}
+    
       
       .social-media2 {
        display: flex;
@@ -150,9 +155,10 @@
       @media (max-width: 991px){
       .column {
         flex-basis: calc(33.333% - 6rem);
-    margin: 0;
-    position: relative;
-    bottom: 70px;
+        margin: 0;
+        position: relative;
+        bottom: 130px;
+        left: 8px;
       }}
       @media (max-width: 991px){
 
@@ -704,7 +710,7 @@ bodywe{
 }
 :root{
  
-    --border-color:#7E2DF978;
+
     --w-image: 495px;
     --calculate: calc(3 / 2);
 }
@@ -771,7 +777,8 @@ bodywe{
     justify-content: end;
     align-items: center;
     font-weight: 500;
-    border-image: linear-gradient(90deg, rgba(250, 204, 165, .7) 0%, rgba(126, 45, 249, .7)) 1 / 1 / 0 stretch;
+   
+   
     box-shadow: 0 0 20px #d1d1d115;
 }
 .carousel .list .item .image img{
@@ -962,7 +969,7 @@ bottom: -60px;
         width: 80%;
         left: 40px;
         justify-content: center;
-        border-block: 1px solid #7E2DF978;
+   
     
     }
     .carousel .list .item .image figcaption{
@@ -996,12 +1003,20 @@ bottom: -60px;
   top: 0;
 }
 .imagenFooter img{
-width: 35% ;
+width: 20% ;
 }
+.imagenFooter a1{
+  bottom: 10%;
+  }
 
 @media (max-width: 991px){
 .imagenFooter img{
-  width: 20% ;
+ 
+    width: 20%;
+    bottom: 150px;
+    position: relative;
+    left: -10px;
+
 
   }  
 .imagenFooter p{
@@ -1398,4 +1413,54 @@ body01{
   overflow: hidden;
   z-index: 10;
   pointer-events: none;
+}
+
+/*------------------------------*/
+.layout {
+  width: 100px;
+  height: 30px;
+
+  display: grid;
+  grid:
+    "facebook whatsapp twiter" 1fr
+    "tiktok instagram x" 1fr
+    / 1fr 1fr 1fr;
+  gap: 40px;
+  left: 11px;
+  bottom: 10px;
+
+}
+
+.facebook { grid-area: facebook; }
+.whatsapp { grid-area: whatsapp; }
+.twiter { grid-area: twiter; }
+.tiktok { grid-area: tiktok; }
+.instagram { grid-area: instagram; }
+.x { grid-area: x; }
+
+.layout a{
+  color: #838383;
+  bottom: -120%;
+  position: relative;
+}
+
+.layout a:hover{
+  color: #a03cfc;
+  transition: color .35s ease,text-shadow .35s ease;
+  text-shadow: 0px 0px 20px #a03cfc;
+
+}
+@media (max-width: 991px){
+  .layout {
+    width: 100px; 
+    display: grid;
+    grid:
+      "facebook whatsapp twiter" 1fr
+      "tiktok instagram x" 1fr
+      / 1fr 1fr 1fr;
+      gap: 30px 50px;
+    left: 90px;
+    bottom: 240px;
+  }
+
 }
