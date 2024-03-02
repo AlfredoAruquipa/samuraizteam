@@ -477,10 +477,16 @@ position: relative;
         margin-bottom: 10px;
         transition: border-color 0.3s;
      
-        border: 1px solid #faeba963;
+        border: 1px solid #7e2df9;
         border-radius: 8px;
     }
-   
+    @media (max-width: 991px){
+      .image {
+  
+        border: 1px solid #7e2df9;
+        
+    }
+    }
     
     .image:hover {
         border: 1.5px solid #7E2DF9;
