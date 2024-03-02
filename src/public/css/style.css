@@ -158,14 +158,14 @@
         margin: 0;
         position: relative;
         bottom: 130px;
-        left: 8px;
+        left: -8px;
       }}
       @media (max-width: 991px){
 
       .column p {
-        margin-bottom: 1rem;
+        margin-bottom: 0.8rem;
         font-family: 'Blender Pro';
-        font-weight: bold;
+        font-weight: 100;
         font-style: normal;
         font-size: 15px;
       }}
@@ -1458,8 +1458,8 @@ body01{
       "facebook whatsapp twiter" 1fr
       "tiktok instagram x" 1fr
       / 1fr 1fr 1fr;
-      gap: 30px 50px;
-    left: 90px;
+    gap: 30px 50px;
+    left: 110px;
     bottom: 240px;
   }
 

@@ -80,7 +80,7 @@
       align-items: center;
       padding: 10px 80px;
       transition: 0.6s;
-      border-block: 1px solid #7f2df96e; 
+      
   }
   header.down{
     background: #180a279c;
@@ -421,7 +421,7 @@ position: relative;
         justify-content: center;
         align-items: center;
         display: flex;
-        top: 40%;
+        top: 30%;
         left: 45%;
     }
     
