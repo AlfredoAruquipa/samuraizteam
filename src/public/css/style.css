@@ -775,10 +775,22 @@ bodywe{
     box-shadow: 0 0 20px #d1d1d115;
 }
 .carousel .list .item .image img{
-  width: 60%;
+  width: 70%;
   margin-bottom: 0px;
-  filter: drop-shadow(0 20px 50px #200053);
+bottom: -60px;
+  filter: drop-shadow(0px 0px 50px #180623);
+  opacity: 1;
+  position: relative;
 }
+@media screen and (max-width: 767px){
+  .carousel .list .item .image img{
+    width: 90%;
+    margin-bottom: 0px;
+    bottom: 30px;
+    filter: drop-shadow(0px 0px 50px #180623);
+    opacity: 1;
+    position: relative;
+}}
 
 .carousel .list .item .image figcaption{
   font-family: 'Blender Pro';
@@ -789,6 +801,9 @@ bodywe{
     margin-bottom: 30px;
     width: 70%;
     color: #fff;
+    bottom: -30px;
+    position: relative;
+    left: -50px;
 }
 .carousel .list .item .main-content{
     height: 100%;
@@ -944,10 +959,11 @@ bodywe{
 }
 @media screen and (max-width: 767px){
     .carousel .list .item .image{
-        width: 100%;
-        left: 0;
+        width: 80%;
+        left: 40px;
         justify-content: center;
         border-block: 1px solid #7E2DF978;
+    
     }
     .carousel .list .item .image figcaption{
         color: #fff;
@@ -956,6 +972,9 @@ bodywe{
         font-family: 'Blender Pro';
         font-weight: bold;
         font-style: normal;
+        bottom: 5px;
+        position: relative;
+        left: 10px;
     }
     .carousel .list .item .main-content .content{
         display: none;
@@ -1077,7 +1096,7 @@ body01{
   font-weight: bold;
   font-style: normal;
   font-size: 15px;
-  top: 7%;
+  top: 1%;
 }
 
 .carousel01{
@@ -1146,6 +1165,7 @@ body01{
   border: 1px solid #7E2DF9;
 }
 .carousel01 .list .item .content{
+ 
     width: 1140px;
     max-width: 90%;
     margin: auto;
@@ -1245,6 +1265,9 @@ body01{
 @media screen and (max-width: 767px){
     .carousel01{
         height: 100vh;
+    }
+    body01{
+      top: 8%;
     }
     .dots{
       bottom: 30%;
@@ -1355,5 +1378,24 @@ body01{
     --transform-to: var(--transform);
 }
 
+/*---------------------------------*/
+.loading-screen {
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  background: rgb(99,47,163);
+  width: 0%;
+  height: 100%;
+}
 
-
+.load-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 10;
+  pointer-events: none;
+}
