@@ -1163,17 +1163,25 @@ body01{
      no-repeat;
     background-size: 100% auto;
     background-blend-mode: multiply;
-   
     -webkit-mask-size: 100% auto;
     -webkit-mask-repeat: no-repeat;
-   
     mask-size: 100% auto;
     mask-repeat: no-repeat;
     transition: background 1s ease-in-out;
-    border: 1px solid #bc9d66;
+    border: 1px solid #e4e4e4;
   border-radius: 8px;
   filter: drop-shadow(15px 15px 50px #130623);
   opacity: 1;
+}
+
+@media (max-width: 991px){
+  .carousel01 .list .item .image{
+    border: 1px solid #7e2df9;
+
+  }
+  .carousel01 .list .item .image:hover{
+    border: 1px solid #e4e4e4;
+  }
 }
 
 .carousel01 .list .item .image:hover{
@@ -1294,7 +1302,7 @@ body01{
         padding: 30px;
         box-sizing: border-box;
         text-align: center;
-        backdrop-filter: blur(20px);
+        /*backdrop-filter: blur(20px);*/
         height: 31%;
         left: 2%;
     }
@@ -1337,10 +1345,10 @@ body01{
     .carousel01 .list .item .image{
        
         width: 350px;
-        height: 490px;
+        height: 350px;
         top: unset;
         bottom: 40px;
-      left: 9%;
+        left: 9%;
     }
 }
 
