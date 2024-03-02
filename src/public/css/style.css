@@ -1146,8 +1146,17 @@ body01{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #eee4;
+    color: rgba(238, 238, 238, 0.068);
     z-index: -1;
+}
+
+@media (max-width: 991px){
+  .carousel01 .list .item::before{
+    color: rgba(238, 238, 238, 0.473);
+    font-size: 150px;
+    top: -10%;
+  }
+  
 }
 .carousel01 .list .item .image{
     flex-shrink: 0;
@@ -1256,8 +1265,8 @@ body01{
     color: #000;
 }
 .dots li{
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     background-color: #eee5;
     border-radius: 50%;
     cursor: pointer;
@@ -1265,6 +1274,13 @@ body01{
 .dots li.active{
     background-color: #eee;
 }
+
+@media (max-width: 991px){
+  .dots li.active{
+    background-color: #7e2df9;
+}
+}
+
 .dots{
     list-style: none;
     margin: 0;
@@ -1470,3 +1486,5 @@ body01{
   }
 
 }
+
+/*-----------------------*/
