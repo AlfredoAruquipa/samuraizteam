@@ -1298,7 +1298,94 @@ body01{
 .carousel01{
     overflow: hidden;
 }
-/* responsive */
+/* -----------------------responsive --------iphones6-----------------*/
+@media screen and (max-width: 375px){
+  .carousel01{
+      height: 100vh;
+  }
+  body01{
+    top: 8%;
+  }
+  .dots{
+    left: 50%;
+    top: 72%;
+  }
+  .carousel01 .list .item .info{
+      position: absolute;
+      bottom: 27%;
+      width: 113%;
+      padding: 30px;
+      box-sizing: border-box;
+      text-align: center;
+      /*backdrop-filter: blur(20px);*/
+      height: 31%;
+      left: 2%;
+  }
+  .carousel01 .list .item .image:hover{
+    border: 1px solid #7E2DF9;
+  }
+
+  .carousel01 .list .item::before {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+   
+}
+
+
+
+  .carousel01 .list .item .info .title{
+    font-size: 15px;
+
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 1em;
+      font-family: 'Blender Pro';
+  }
+  .carousel01 .list .item .info .des{
+   
+    top: 10%;
+    position: relative;
+  }
+  .carousel01 .list .item .content{
+      justify-content: center;
+      align-items: start;
+  }
+  .arrows1 button{
+      top: unset;
+      bottom: 40px;
+  }
+  .carousel01 .list .item .image{
+     
+      width: 350px;
+      height: 350px;
+      top: unset;
+      bottom: 50px;
+      left: 9%;
+  }
+  .dots{
+    bottom: 30%;
+  }
+  .carousel01 .list .item .info .category{
+ top: 20%;
+ position: relative;
+}
+.carousel01 .list .item .info .title{
+  top: 25%;
+  position: relative;
+}
+.carousel01 .list .item .image{
+  width: 350px;
+  height: 350px;
+  top: unset;
+  bottom: 55px;
+  left: 9%;
+  position: relative;
+}
+}
+
+
+/*----------------responsible---------------iphoneX-*/
 @media screen and (max-width: 767px){
     .carousel01{
         height: 100vh;
@@ -1309,6 +1396,7 @@ body01{
     .dots{
       bottom: 30%;
     }
+  
     .carousel01 .list .item .info{
         position: absolute;
         bottom: 27%;
@@ -1487,4 +1575,295 @@ body01{
 
 }
 
-/*-----------------------*/
+/*---------sOTRE--------------*/
+
+
+
+.plus-jakarta {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+}
+
+
+.bodyStore{
+   
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+}
+
+footerStore{
+  
+  width: 100%;
+  }
+ 
+    headerStore {
+      z-index: 999;
+      position: fixed;
+     
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+      padding: 10px 80px;
+      transition: 0.6s;
+      background-color: #000;
+      flex-direction: row;
+  
+  }
+
+
+/*
+    z-index: 999;
+    position: fixed;
+    top: 38px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 80px;
+    transition: 0.6s;*/
+
+
+
+
+
+
+  headerStore.down{
+    padding: 5px 50px;
+    transition: .15s
+  }  
+  @media (max-width: 991px){
+    headerStore.down .brand img{
+     
+        height: 40px;
+        left: 10%;
+        position: relative;
+ 
+      
+  }  
+
+  headerStore {
+    z-index: 999;
+    position: fixed;
+    top: 38px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 80px;
+    transition: 0.6s;
+    background-color: #000;
+}
+
+
+
+
+
+
+
+
+} 
+
+  img.down{
+    display:block;
+  margin:auto;
+    
+  }
+  
+  
+  headerStore .brand{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    
+  }
+  
+  headerStore .menu{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 4px;
+  }
+  
+  headerStore .menu ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    right: 5%;
+  }
+  
+  headerStore .menu ul li{
+      list-style: none;
+  }
+  
+  headerStore .menu a{
+    color: #ffffff;
+    font-weight: 10;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 0 20px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: bold;
+    transition-property: color, background;
+  }
+  
+
+
+
+  headerStore .menu a:hover{
+    color: #7e2df9;
+    transition: color .35s ease,text-shadow .35s ease;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 20px #a03cfc;
+  
+  }
+  
+  .section-two{
+    padding: 20px;
+  }
+    /*boton para  abir menu lateral*/
+    headerStore .btn{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  @media (max-width: 991px){
+    headerStore, headerStore.down{
+        padding: 20px 10px;
+        top: 0;
+    }
+    headerStore .btn{
+      display: block;
+      color: #ffffff;
+    
+    }
+  /*menulateral modomovil*/
+  headerStore .menu{
+      position: fixed;
+      background-image: linear-gradient(to right, #000000 , #000000);
+      min-width: 330px;
+      height: 100vh;
+      top: 0;
+      right: -150%;
+      padding: 80px 50px;
+      transition: 0.5s;
+      transition-property: right;
+      
+    }
+  
+    headerStore .menu ul{
+        flex-direction: column;
+      }
+  
+      headerStore .menu.active{
+      right: 0;
+    }
+  
+    headerStore .menu .close-btn{
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 25px;
+    }
+  
+    headerStore .menu a{
+      display: block;
+      font-size: 11px;
+      margin: 20px;
+      padding: 0 15px;
+      font-family: "Plus Jakarta Sans", sans-serif;
+      font-weight: normal;
+    }
+  }
+
+  @media (max-width: 600px){
+    .section-main h1{
+      font-size: 50px;
+      line-height: 60px;
+    }
+  }
+  headerStore .brand img {
+    height: 50px;
+    right: 20%;
+    position: relative;
+
+}
+
+.img-overlayStore {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url('/img/3.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 500px; /* o el alto que desees */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 10px;
+    position: relative;
+
+
+}
+
+@media (max-width: 991px){
+  .img-overlayStore {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 12%;
+    object-fit: cover;
+    top: 80px;
+
+}
+headerStore .brand img {
+  height: 50px;
+  left: 15%;
+  position: relative;
+}
+headerStore .menu .close-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 25px;
+}
+headerStore .menu .btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 25px;
+}
+
+}
+/*------------scroll------------------*/
+body::-webkit-scrollbar{
+  width: 10px;
+  background: #7e2df9;
+}
+body::-webkit-scrollbar-thumb{
+  background: #7e2df9;
+  border-radius: 10px;
+  border-right: 2px solid  #7e2df9 
+}
+
+
+
+body {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}

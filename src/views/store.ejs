@@ -1,28 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TiendaPanda</title>
     <%- include("partials/head") %>
 </head>
-<headerAbout>
 
-    <%- include("partials/redessociales2") %>
-    <%- include("partials/navbar") %>
-</headerAbout>
-<bodyAbout >
+    <%- include("partials/navbarStore") %>
+
+
+<body class="bodyStore">
     <div class="parallax-container">
+        <%- include("partials/tienda") %>
       
-  
-
+   
        
+      <div class="title-row">
+        <h2 class="title"> Noticias destacadas</h2>
+        <button>Ver más</button>
       </div>
-</bodyAbout>
+
+            <%- include("partials/ve") %>
+               
+   
+          <div class="title-row2">
+            <h2 class="title2"> Proxímos eventos</h2>
+            <button>Ver más</button>
+          </div>
+            
+          <%- include("partials/cuadro") %>
+      </div>
+</body>
 
 
-<footerAbout>
-    <%- include("partials/footer") %>
-</footerAbout>
-</html>
+<footerStore>
+
+</footerStore>
+
 
