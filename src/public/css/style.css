@@ -1994,8 +1994,8 @@ body {
 }
 
 .layoutstore {
-  width: 1366px;
-  height: 768px;
+  width: 200px;
+  height: 500px;
   display: grid;
   grid:
       "uno dos tres cuatro" 1fr
@@ -2026,38 +2026,72 @@ body {
 /*------------*/
 @media (max-width: 768px){
   .layoutstore {
-    width: 160px;
-    height: 200px;
-  
+    width: 260px;
+    height: 800px;
     display: grid;
     grid:
-      "uno dos" 1fr
-      "tres cuatro" 1fr
-      "cinco seis" 1fr
-      "siete ocho" 1fr
-      / 1fr 1fr;
+        "uno dos" 1fr
+        "tres cuatro" 1fr
+        "cinco seis" 1fr
+        "siete ocho" 1fr / 1fr 1fr;
     gap: 8px;
+    top: 90px;
+    margin-right: -15px;
+    margin-left: 15px;
   }
   
-  .uno { grid-area: uno; }
-  .dos { grid-area: dos; }
-  .tres { grid-area: tres; }
-  .cuatro { grid-area: cuatro; }
-  .cinco { grid-area: cinco; }
-  .seis { grid-area: seis; }
-  .siete { grid-area: siete; }
-  .ocho { grid-area: ocho; }
+  .uno h1{ 
+    font-size: 10px;
+    color: #ffffffbe; 
+  }
+  .dos h1{ 
+    font-size: 10px;
+    color: #ffffffbe; 
+  }
+  .tres h1{ 
+    font-size: 10px;
+    color: #ffffffbe; 
+  }
+  .cuatro h1{ 
+    font-size: 10px;
+    color: #ffffffbe;  
+  }
+  .cinco h1{ 
+    font-size: 10px;
+    color: #ffffffbe;  
+  }
+  .seis h1{ 
+    font-size: 10px;
+    color: #ffffffbe; 
+  }
+  .siete h1{ 
+    font-size: 10px;
+    color: #ffffffbe; 
+  }
+  .ocho h1{ 
+    font-size: 10px;
+    color: #ffffffbe;  
+  }
 
 .layoutstore img{
   height: 100%;
-  max-height: 100px;
-  width: 50%;
+  max-height: 150px;
+  width: auto;
   }
 
   .section-title {
-    padding: 10px 0;
-  }
-
+    padding: 40px 0;
+    top: 90px;
+    position: relative;
+}
+.mb-1 {
+  margin-bottom: .25rem !important;
+}
+.h2, h2 {
+  font-size: 10px;
+  color: #ffffffbe; 
+  text-align: center;
+}
   /*footermovil*/
 
   .footerstore {
@@ -2066,7 +2100,7 @@ body {
     padding: 7rem 0;
     border-block: 1px solid #7E2DF978;
     bottom: 0px;
-    position: fixed;
+    position: relative;
     height: 495px;
 }
   
@@ -2148,5 +2182,28 @@ body {
 .column2 h3:hover{
   color: #ffffff;
 }
-
+.btn1 {
+  text-decoration: none;
+  text-align: center;
+  border: 0;
+  cursor: pointer;
+  font-size: 10px;
+  line-height: 12px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-transform: uppercase;
+  white-space: normal;
+  background: 0 0;
+  /* -webkit-transition: all .4s ease; */
+  -ms-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  transition: all .4s ease;
+  color: #ffffff;
+  bottom: 20%;
+  /* position: relative; */
+  position: absolute;
+  left: 250px;
+}
 }
