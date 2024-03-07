@@ -88,7 +88,7 @@
     backdrop-filter: blur(2px); 
     border-block: 1px solid #7f2df96e;
   }  
-  @media (max-width: 991px){
+  @media (max-width: 768px){
   header.down{
     background: #180a279c;
     backdrop-filter: blur(2px); 
@@ -203,7 +203,7 @@ header3 .menu{
     display: none;
   }
   
-  @media (max-width: 991px){
+  @media (max-width: 768px){
     header, header.down{
         padding: 20px 10px;
         top: 0;
@@ -318,14 +318,14 @@ header3 .menu{
 
 
   
-@media (max-width: 991px){
+@media (max-width: 768px){
   .social-media-bar a{
     color:#a499b494;
     font-size: 25px;  
   }}
 
 
-  @media (max-width: 991px){
+  @media (max-width: 768px){
    .social-media-bar {
       top: 450%;
       left: 20%;
@@ -337,13 +337,13 @@ header3 .menu{
 }
     }
 
-  @media (max-width: 991px){
+  @media (max-width: 768px){
     header77.down {
       top: -500px;
     }
     }
 
-  @media (max-width: 991px){
+  @media (max-width: 768px){
         header .brand img{
           position: relative;
          height: 50px; 
@@ -393,7 +393,7 @@ color: #beb3cf;
 font-size: 20px;
 }
 
-@media (max-width: 991px){
+@media (max-width: 768px){
 .social-media-bar2 a{
   color:#a499b494;
   font-size: 0;
@@ -402,7 +402,7 @@ font-size: 20px;
   font-size: 0px;
   }
 }
-@media (max-width: 991px){
+@media (max-width: 768px){
   header77 .social-media-bar2 {
 top: 0;
 left: 0;
@@ -410,13 +410,13 @@ position: relative;
 
   }
   }
-@media (max-width: 991px){
+@media (max-width: 768px){
   header77.down {
     top: -500px;
   }
   }
 
-@media (max-width: 991px){
+@media (max-width: 768px){
       header .brand img{
         position: absolute;
         justify-content: center;
@@ -453,7 +453,7 @@ position: relative;
         max-width: 1450px;
     }
 
-    @media (max-width: 991px){
+    @media (max-width: 768px){
     .container {
       display: flex;
       flex-direction: column;
@@ -481,7 +481,7 @@ position: relative;
         border: 1px solid #7e2df9;
         border-radius: 8px;
     }
-    @media (max-width: 991px){
+    @media (max-width: 768px){
       .image {
   
         border: 1px solid #7e2df9;
@@ -602,7 +602,7 @@ color: #fff;
   }
 
 
-  @media (max-width: 991px){
+  @media (max-width: 768px){
     .title-row {
       display: flex;
       justify-content: space-between;
@@ -613,7 +613,7 @@ color: #fff;
       padding: 20px 20px;
   
 } } 
-@media (max-width: 991px){
+@media (max-width: 768px){
   .title-row .title {
     font-size: 1.2rem;
     font-family: "Blender Pro";
@@ -622,7 +622,7 @@ color: #fff;
 
 } } 
 
-@media (max-width: 991px){
+@media (max-width: 768px){
   .title-row4 {
     display: flex;
     justify-content: space-between;
@@ -633,7 +633,7 @@ color: #fff;
     padding: 20px 20px;
 
 } } 
-@media (max-width: 991px){
+@media (max-width: 768px){
 .title-row4 .title4 {
   font-size: 1.6rem;
   font-family: "Blender Pro";
@@ -641,7 +641,7 @@ color: #fff;
   color: #fff;
 
 } } 
-@media (max-width: 991px){
+@media (max-width: 768px){
   .title-row2 {
     display: flex;
     justify-content: space-between;
@@ -653,7 +653,7 @@ color: #fff;
 
 } } 
 
-@media (max-width: 991px){
+@media (max-width: 768px){
 .title-row2 .title2 {
   font-size: 1.2rem;
   font-family: "Blender Pro";
@@ -661,7 +661,7 @@ color: #fff;
   color: #fff;
 
 } } 
-@media (max-width: 991px){
+@media (max-width: 768px){
      button{
     border: 1px solid #7E2DF9;
     background: transparent;
@@ -677,7 +677,7 @@ color: #fff;
 
 } } 
 
-@media (max-width: 991px){
+@media (max-width: 768px){
 .column1 .image{
       
   border-radius: 8px;
@@ -735,7 +735,7 @@ footer3.down3 {
   border-block: 1px solid #7E2DF978;
 }
 
-@media (max-width: 991px){
+@media (max-width: 768px){
   footer2 {
     z-index: 999;
     position: fixed;
@@ -755,7 +755,7 @@ footer3.down3 {
     height: 88px;
   } 
  }
- @media (max-width: 991px){
+ @media (max-width: 768px){
  footer3 {
   height: 18px;
   z-index: 999;
@@ -791,7 +791,7 @@ footer3.down3 {
   font-size: 4rem; /* o el tamaño de fuente que desees */
  
 }
-@media (max-width: 991px){
+@media (max-width: 768px){
 .img-overlay {
  
   background-image: linear-gradient(to bottom, rgb(17 6 39 / 33%), rgb(13 1 34 / 24%)), url('/img/fond01.jpg');
@@ -812,19 +812,19 @@ footer3.down3 {
   opacity: 0.8; /* o el nivel de opacidad que desees */
 }}
 /*----------------aboutventana---------------------*/
-@media (max-width: 991px){
+@media (max-width: 768px){
   headerAbout{
   display: flex;
 width: 100%;
 }}
 
-@media (max-width: 991px){
+@media (max-width: 768px){
   bodyAbout{
     display: flex;
 width: 100%;
   }}
 
-  @media (max-width: 991px){
+  @media (max-width: 768px){
     footerAbout{
    
     top:50px ;
@@ -875,7 +875,7 @@ headerAbout{
       z-index: -1;
       max-width: 100%
     }
-    @media (max-width: 991px){
+    @media (max-width: 768px){
     .parallax-container {
       position: relative;
       height: 100%; /* Use viewport height for full-height container */
