@@ -1,176 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body01>
-    
-    <header>
-    
-    </header>
-    <!-- slider -->
-    <div class="carousel01">
-        <div class="list">
-            <div class="item active" 
-            style="
-            --img-src: url('/img/item1.png');
-            --bg-color: #160a27;
-            --title: 'SAMURAIZ'
-            ">
-                <div class="content">
-                    <div class="image"></div>
-                    <div class="info">
-                        <div class="title">
-                            TE PRESENTAMOS A NUESTROS LIDERES
-                        </div>
-                        <div class="category">
-                            SAMURAIZ
-                        </div>
-                        <div class="des">
-                           
-                            "TU HISTORIA PODRÁ NO TENER UN PRINCIPIO MUY FELIZ, PERO ESO NO  TE CONVIERTE EN QUIEN ERES, SI NO EL RESTO DE TU HISTORIA,  QUIEN TÚ DECIDAS SER"
-                          </div>
-                        <a href="">
-                          
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="item" 
-            style="
-            --img-src: url('/img/item2.png');
-            --bg-color: #160a27;
-            --title: 'SAMURAIZ'
-            ">
-                <div class="content">
-                    <div class="image"></div>
-                    <div class="info">
-                        <div class="title">
-                            MARZO SEDE CBBA
-                        </div>
-                        <div class="category">
-                           SAMURATÓN
-                        </div>
-                        <div class="des">
-                            Un evento que reune a los mejores TEAMS de FK,  FESTEJANDO EL 3er ANIVERSARIO DEL TEAM SAMURAIZ
-                          </div>
-                        <a href="">
-                          
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="item" 
-            style="
-            --img-src: url('/img/item3.png');
-            --bg-color: #160a27;
-            --title: 'SAMURAIZ'
-            ">
-                <div class="content">
-                    <div class="image"></div>
-                    <div class="info">
-                        <div class="title">
-                            #SOMOSSAMURAIZ
-                        </div>
-                        <div class="category">
-                            BANDERA  SAMURAIZ
-                        </div>
-                        <div class="des">
-                            #TeamSamuraiz 
-#FULLKOMBAT #RITMOSFITNESS
-"Como Samurai debo fortalecer mi carácter, como ser humano debo perfeccionar mi espíritu."
-                          </div>
-                        <a href="">
-                           
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="arrows1">
-            <button01 id="prev"><</button01>
-            <button01 id="next">></button01>
-        </div>
-        <ul class="dots">
-            <li class="active"></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </div>
+<div class="carousel55">
 
-    <script>
-      let list = document.querySelectorAll('.carousel01 .list .item');
-let carousel01 = document.querySelector('.carousel01');
-let dots = document.querySelectorAll('.dots li');
-let nextBtn = document.getElementById('next');
-let prevBtn = document.getElementById('prev');
 
-let lastPosition = list.length - 1;
-let active = 0;
-let zIndex = 2;
+    <img class="image" src="/img/item2.png" alt="Image 1">
+   
 
-nextBtn.onclick = () => {
-    let newValue = active + 1 > lastPosition ? 0 : active + 1;
-    setItemActive(newValue, showSlider);
-}
-prevBtn.onclick = () => {
-    let newValue = active - 1 < 0 ? lastPosition : active - 1;
-    setItemActive(newValue, showSlider);
+    <img class="image" src="/img/item1.png" alt="Image 2">
+    <img class="image" src="/img/item3.png" alt="Image 3">
+  </div>
+  <script>
+    const carousel55 = document.querySelector('.carousel55');
+const images = carousel55.querySelectorAll('.image');
+let currentImageIndex = 0;
+
+function rotateImages() {
+  images[currentImageIndex].style.display = 'none';
+  currentImageIndex = (currentImageIndex + 1) % images.length;
+  images[currentImageIndex].style.display = 'block';
 }
 
-dots.forEach((dot, index) => {
-    dot.addEventListener('click', () => {
-        setItemActive(index, showSlider);
-    })
-})
-
-const setItemActive = (newValue, callbackFunction) => {
-    if(newValue === active) return;
-    let type = newValue > active ? 'next' : 'prev';
-    active = newValue;
-    callbackFunction(type);
-}
-let removeEffect;
-let autoRun = setTimeout(() => {
-    nextBtn.click();
-}, 5000);
-const showSlider = (type) => {
-    carousel01.style.pointerEvents = 'none';
-    // find Item Active Old
-    let itemActiveOld = document.querySelector('.carousel01 .list .item.active');
-    if(itemActiveOld) itemActiveOld.classList.remove('active');
-    zIndex++;
-    list[active].style.zIndex = zIndex;
-    list[active].classList.add('active');
-
-    if(type === 'next'){
-        carousel01.style.setProperty('--transform', '300px');
-    }else{
-        carousel01.style.setProperty('--transform', '-300px');
-    }
-    carousel01.classList.add('effect');
-
-    // dots
-    // find dot active old
-    let dotActiveOld = document.querySelector('.dots li.active');
-    if(dotActiveOld) dotActiveOld.classList.remove('active');
-    dots[active].classList.add('active');
-
-    clearTimeout(removeEffect);
-    removeEffect = setTimeout(() => {
-        carousel01.classList.remove('effect');
-        carousel01.style.pointerEvents = 'auto';
-    }, 1500);
-
-    clearTimeout(autoRun);
-    autoRun = setTimeout(() => {
-        nextBtn.click();
-    }, 5000);
-}
-
-    </script>
-</body01>
-</html>
+setInterval(rotateImages, 5000); // Change the interval as needed
+  </script>
+  
