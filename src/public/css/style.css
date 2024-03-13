@@ -1853,8 +1853,8 @@ headerStore .menu .btn {
 }
 /*------------scroll------------------*/
 body::-webkit-scrollbar{
-  width: 10px;
-  background: #7e2df9;
+  width: 5px;
+  background: #020202;
 }
 body::-webkit-scrollbar-thumb{
   background: #7e2df9;

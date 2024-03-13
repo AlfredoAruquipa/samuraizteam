@@ -6,8 +6,7 @@
         url('/font/BlenderPro-Thin.woff2') format('woff2'),
         url('/font/BlenderPro-Thin.woff') format('woff'),
         url('/font/BlenderPro-Thin.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
+   
   }
   
   @font-face {
@@ -185,7 +184,6 @@ header3 .menu{
     transition-property: color, background;
   }
   
-
 
 
   header .menu a:hover{
@@ -815,6 +813,46 @@ footer3.down3 {
   font-size: 2.5rem; /* o el tamaño de fuente que desees */
   opacity: 0.8; /* o el nivel de opacidad que desees */
 }}
+
+/*--------------aboutInicio-------------*/
+.img-overlay2 {
+  background-image: linear-gradient(to bottom, rgb(17 6 39 / 33%), rgb(13 1 34 / 24%)), url('/img/fond02.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 400px; /* o el alto que desees */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-transform: uppercase;
+
+  font-family: 'Blender Pro';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 3rem; /* o el tamaño de fuente que desees */
+ 
+}
+@media (max-width: 768px){
+.img-overlay2 {
+ 
+  background-image: linear-gradient(to bottom, rgb(17 6 39 / 33%), rgb(13 1 34 / 24%)), url('/img/fond02.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 400px; /* o el alto que desees */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-transform: uppercase;
+
+  font-family: 'Blender Pro';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 2.5rem; /* o el tamaño de fuente que desees */
+  opacity: 0.8; /* o el nivel de opacidad que desees */
+}}
 /*----------------aboutventana---------------------*/
 @media (max-width: 768px){
   headerAbout{
@@ -902,6 +940,258 @@ headerAbout{
     
     
     /*------------------entradassalidaspaginas---------*/
-   
+    .layoutNosotros {
+      width: 100%;
+      height: auto;
     
-   
+      display: grid;
+      grid:
+        "uno" 1fr
+        "dos" 1fr
+        "tres" 1fr
+        "cuatro" 1fr
+        / 1fr;
+      gap: 8px;
+    }
+    
+    .layoutNosotros img{
+      width: 100%;
+      height: auto;
+    }
+    
+ /*-----------------------rigth--------------------*/
+  
+  .full_img_right .right__info {
+    display: grid;
+    grid-gap: 1rem;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.line_head {
+  display: flex;
+  grid-gap: 1.8rem;
+  gap: 1.8rem;
+  place-items: center;
+}
+
+
+.line_head svg {
+  align-self: center;
+}
+
+
+.community__head {
+  font-size: 2rem;
+  line-height: 2.8rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.full_img_right .right__info .community__txt {
+  position: relative;
+  padding-right: 4rem;
+}
+/*--------------------izquierda-----------------*/
+
+      .full_img_right {
+        display: flex;
+        grid-gap: 2rem;
+        gap: 2rem;
+        background: linear-gradient(270.01deg, #1E053A 1.65%, rgba(30, 5, 58, 0) 96.97%), linear-gradient(0deg, rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(/img/fond3.jpg);
+        background-position-x: 30%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        flex-flow: column-reverse;
+    }
+
+
+
+ 
+    .full_img_right2 {
+      display: flex;
+      grid-gap: 2rem;
+      gap: 2rem;
+      background: linear-gradient(270.01deg, #1E053A 1.65%, rgba(30, 5, 58, 0) 96.97%), linear-gradient(0deg, rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(/img/fond333.jpg);
+      background-position-x: 30%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      flex-flow: column-reverse;
+  }
+
+
+
+
+  .full_img_right .right__info .community__txt {
+    padding-right: 0;
+    max-width: 55ch;
+    font-size: 1.6rem;
+    color: #ffffff;
+    font-family: 'Blender Pro';
+    font-weight: 100;
+    font-style: normal;
+}
+.full_img_right div {
+  width: 100%;
+  min-height: -10rem;
+}
+section1 {
+  max-width: none;
+  margin-inline: auto;
+  width: 100%;
+ 
+}
+
+
+.full_img_left {
+  display: flex;
+  grid-gap: 2rem;
+  gap: 2rem;
+  background: linear-gradient(270.01deg, #1E053A 1.65%, rgba(30, 5, 58, 0) 90.97%), linear-gradient(0deg, rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(/img/fond33.jpg);
+  background-position-x: 10%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-flow: column;
+
+    transform: scaleX(-1);
+
+}
+
+.full_img_left{
+  flex-flow: row;
+  max-width: unset;
+  margin-inline: 0;
+  padding-block: 20rem;
+}
+.pd {
+  padding-inline: clamp(2vw, 10rem, 5vw);
+  padding-block: clamp(3rem + 2vw, 4.5rem + 3vw, 8rem);
+}
+.pd2 {
+  padding-inline: clamp(2vw, 10rem, 5vw);
+  padding-block: clamp(3rem + 2vw, 4.5rem + 3vw, 8rem);
+}
+
+.full_img_left div {
+  width: 100%;
+  min-height: -10rem;
+  bottom: 25%;
+  position: relative;
+}
+.full_img_left .left__info {
+
+  transform: scaleX(-1);
+  display: grid;
+  grid-gap: 1rem;
+  gap: 1rem;
+  padding: 1rem;
+}
+.full_img_left .left__info .community__txt {
+  position: relative;
+  padding-right: 4rem;
+  padding-right: 0;
+  max-width: 55ch;
+  font-size: 1.6rem;
+  color: #ffffff;
+  font-family: 'Blender Pro';
+  font-weight: 100;
+  font-style: normal;
+}
+/*------------------------------rigth2-------------*/
+.full_img_right2 .right__info {
+  display: grid;
+  grid-gap: 1rem;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+
+  .full_img_right2 {
+    display: flex;
+    grid-gap: 2rem;
+    gap: 2rem;
+    background: linear-gradient(270.01deg, #1E053A 1.65%, rgba(30, 5, 58, 0) 96.97%), linear-gradient(0deg, rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(/img/fond333.jpg);
+    background-position-x: 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-flow: column-reverse;
+}
+
+
+
+
+.full_img_right2 .right__info .community__txt {
+  padding-right: 0;
+  max-width: 55ch;
+  font-size: 1.6rem;
+  color: #ffffff;
+  font-family: 'Blender Pro';
+  font-weight: 100;
+  font-style: normal;
+
+}
+.community__head {
+font-size: 3.2rem;
+line-height: 4rem;
+color: #ffffff;
+  font-family: 'Blender Pro';
+font-style: normal;
+}
+
+.full_img_right2 div {
+width: 100%;
+min-height: -10rem;
+}
+/*-----------------redimensiobabke--------------*/
+@media (max-width: 768px){
+
+  .full_img_right2 .right__info .community__txt {
+    padding-right: 0;
+    max-width: 55ch;
+    font-size: 1rem;
+    color: #ffffff;
+    font-family: 'Blender Pro';
+    font-weight: 100;
+    font-style: normal;
+  
+  }
+  .full_img_right .right__info .community__txt {
+    padding-right: 0;
+    max-width: 55ch;
+    font-size: 1rem;
+    color: #ffffff;
+    font-family: 'Blender Pro';
+    font-weight: 100;
+    font-style: normal;
+  
+  }
+  .full_img_left .left__info .community__txt {
+    position: relative;
+    padding-right: 0;
+    max-width: 55ch;
+    font-size: 1rem;
+    color: #ffffff;
+    font-family: 'Blender Pro';
+    font-weight: 100;
+    font-style: normal;
+  }
+  .community__head {
+    font-size: 2.2rem;
+    line-height: 4rem;
+    color: #ffffff;
+    font-family: 'Blender Pro';
+    font-style: normal;
+}
+.full_img_left .left__info {
+
+  transform: scaleX(-1);
+  display: grid;
+  grid-gap: 1rem;
+  gap: 1rem;
+  padding: 1rem;
+  left: 50%;
+}
+
+
+}
+
