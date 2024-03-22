@@ -1266,11 +1266,7 @@ button90.btn-arrow::after {
   margin-bottom: 2rem;
 }
 
-button90{
-  font-family: "Blender Pro";
-  font-size: 1.1rem;
-  font-weight: 400;
-}
+
 .title-row22 button90 {
   border: 1px solid #7E2DF9;
   background: transparent;
@@ -1339,4 +1335,205 @@ button90{
 }
 .matches[_ngcontent-owo-c60] .tabs[_ngcontent-owo-c60] hr.active[_ngcontent-owo-c60] {
   margin-left: 50%;
+}
+
+
+
+.ng-tns-c60-4 p, a, input, button90, textarea, select {
+  font-family: "Blender Pro";
+  font-size: 1.2rem;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.matches-wrapper[_ngcontent-owo-c60] {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  grid-gap: 6rem;
+  gap: 6rem;
+}
+
+/*---------------------------------contacto--------------------------------*/
+.page[_ngcontent-bpp-c73] {
+  padding-bottom: unset;
+  position: relative;
+  background: url(/img/background-newsletter.dd80675dcff43ead.png), linear-gradient(270deg, rgba(0, 0, 0, 0) 5.17%, rgba(126, 45, 249, .16) 20.21%, rgba(126, 45, 249, .2) 48.94%, rgba(126, 45, 249, .16) 66.27%, rgba(0, 0, 0, 0) 92.72%);
+  mix-blend-mode: exclusion;
+  background-repeat: no-repeat;
+
+ background-size: auto;
+}
+.page {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  margin-inline: auto;
+  z-index: 1;
+}
+.form[_ngcontent-bpp-c73] {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  margin-top: 8rem;
+  padding-block: 2rem 10rem;
+}
+.pdv {
+  padding-inline: clamp(2vw, 10rem, 5vw);
+  padding-block: clamp(3rem + 2vw, 4.5rem + 3vw, 8rem);
+}
+sectionv {
+  max-width: none;
+  margin-inline: auto;
+  width: 100%;
+}
+
+.form .form__container {
+  position: relative;
+  place-items: baseline;
+  border: 1px solid #7e2df9;
+  border-radius: 8px;
+  box-shadow: 15px 15px 50px #170927;
+  background: linear-gradient(146.34deg, rgb(54 1 135 / 30%) 6.18%, rgba(66, 0, 145, .35) 100%), linear-gradient(0deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6));
+  padding: min(7rem, 5vw);
+}
+buttonv[_ngcontent-bpp-c73]:disabled {
+  opacity: .5;
+  pointer-events: none;
+}
+buttonv[_ngcontent-bpp-c73] {
+  width: 16rem;
+  margin-left: auto;
+  margin-top: 5rem;
+  border-radius: 2px;
+  border: 1px solid #a03cfccc;
+  display: grid;
+  --y: 0;
+  --x: 0;
+  position: relative;
+  overflow: hidden;
+  transition: border-color var(--transition), opacity var(--transition);
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  cursor: pointer;
+}
+.page p[_ngcontent-bpp-c73] {
+  text-align: center;
+  font-family: "Blender Pro";
+  font-size: 1.1rem;
+
+ font-weight: 500;
+}
+.page p, a, input, button, textarea, select {
+  font-family: "Blender Pro";
+  font-size: 1.1rem;
+ color: #ffffff;
+ font-weight: 500;
+}
+.ng-tns-c60-4 p, a, input, button90, textarea, select {
+  font-family: "Blender Pro";
+  font-size: 1.2rem;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.form[_ngcontent-bpp-c73] .containerv[_ngcontent-bpp-c73] {
+  max-width: 38rem;
+}
+h1[_ngcontent-bpp-c73] {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  width: 100%;
+}
+form[_ngcontent-bpp-c73] {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+}
+.input-wrapper[_ngcontent-bpp-c73] {
+  display: flex;
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid rgba(151, 151, 151, .5);
+  margin-top: 4rem;
+  padding-bottom: 1rem;
+  
+}
+.input-wrapper input {
+  background: transparent;
+  width: 100%;
+  color: #f2eae4;
+  outline: none;
+  flex-grow: 1;
+  border: transparent;
+}
+ svgv {
+  vertical-align: middle;
+  color: #ffffff;
+}
+
+.input-wrapper textarea {
+  background: rgba(255, 255, 255, 0);
+  width: 100%;
+  color: #f2eae4;
+  outline: none;
+  flex-grow: 1;
+  border: transparent;
+}
+.form__checkbox input[type=checkbox] {
+  appearance: none;
+  display: grid;
+  place-content: center;
+  background: rgba(126, 45, 249, .1);
+  box-shadow: 0 0 1px #6701e14d;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  top: 20%;
+  width: 2em;
+  height: 2em;
+  border-radius: .15em;
+  transform: translateY(-.075em);
+}
+.form__checkbox input[type=checkbox]:checked:before {
+  transform: scale(1);
+}
+.form__checkbox input[type=checkbox]:before {
+  content: "";
+  width: 1.5em;
+  height: 1.5em;
+  transform: scale(0);
+  transition: .12s transform ease-in-out;
+  box-shadow: inset 1em 1em var(--9z-primary);
+  background-color:#ffffff;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+} 
+.form__checkbox[_ngcontent-jgp-c73] p[_ngcontent-jgp-c73], .form__checkbox[_ngcontent-jgp-c73] a[_ngcontent-jgp-c73] {
+  font-size: 1.6rem;
+}
+.form__checkbox[_ngcontent-jgp-c73] a[_ngcontent-jgp-c73] {
+  text-decoration: underline;
+}
+.form__checkbox[_ngcontent-jgp-c73] p[_ngcontent-jgp-c73], .form__checkbox[_ngcontent-jgp-c73] a[_ngcontent-jgp-c73] {
+  color: #bcbcbc;
+  font-size: 1.4rem;
+  text-align: left;
+}
+.date{
+color: #7e2df9;
+}
+.secondary-btn {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid;
+  border-image: linear-gradient(97deg, #a03cfc 12%, #facca5 167.4%) 1 / 1 / 0 stretch;
+  background: transparent;
+  color: var(--9z-primary-2);
+  box-shadow: 0 0 2px #6701e1cc;
+  padding: 1rem 2rem;
+  transition: transform .25s ease-in-out;
+}
+
+.mail pdv{
+  width: 10%;
+
 }
