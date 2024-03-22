@@ -1360,7 +1360,7 @@ button90.btn-arrow::after {
   mix-blend-mode: exclusion;
   background-repeat: no-repeat;
 
- background-size: auto;
+ background-size: cover;
 }
 .page {
   position: relative;
@@ -1419,7 +1419,7 @@ buttonv[_ngcontent-bpp-c73] {
 .page p[_ngcontent-bpp-c73] {
   text-align: center;
   font-family: "Blender Pro";
-  font-size: 1.1rem;
+  font-size: 1rem;
 
  font-weight: 500;
 }
@@ -1431,8 +1431,11 @@ buttonv[_ngcontent-bpp-c73] {
 }
 .ng-tns-c60-4 p, a, input, button90, textarea, select {
   font-family: "Blender Pro";
-  font-size: 1.2rem;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-size: 1rem;
+color: #7e2df9;
+}
+.form__checkbox a:hover{
+  color: #ffffff9f;
 }
 .form[_ngcontent-bpp-c73] .containerv[_ngcontent-bpp-c73] {
   max-width: 38rem;
@@ -1533,7 +1536,8 @@ color: #7e2df9;
   transition: transform .25s ease-in-out;
 }
 
-.mail pdv{
-  width: 10%;
 
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
 }
+
